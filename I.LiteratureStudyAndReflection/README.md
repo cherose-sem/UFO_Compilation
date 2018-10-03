@@ -10,9 +10,14 @@
 > _A list of all Google queries you made to solve it, and timestamps (just copy it from the browser history)_
 
 
-
-> _A list all pages you visited to solve it (just copy it from the browser history)_
-
+TIME | GOOGLE QUERIES | Description
+--- | --- | ---
+19:30 | https://www.linqpad.net/CodeSnippetIDE.aspx  | Download & install linqpad
+19:35 | https://forum.linqpad.net/discussion/1220/running-linqpad-on-ubuntu , https://stackoverflow.com/questions/3681950/is-it-possible-to-run-linqpad-with-mono-mac  | OS issue (only for Windows)
+20:00 | http://www.tutorialsteacher.com/linq/what-is-linq | What is linq, learning basic understanding of linq
+20:05 | https://www.linqpad.net/WhyLINQBeatsSQL.aspx | Linq vs sql
+20.20 | http://www.tutorialsteacher.com/linq/linq-query-syntax | Making queries
+20:23 | https://stackoverflow.com/questions/2767709/join-where-with-linq-and-lambda | try client side joins (How?)
 
 
 > _A list of the 3 most biggest stumbling blocks you came across and your reflection on why they were problematic (did you misunderstand something, was some of the info you found wrong, did you miss a detail, …)_

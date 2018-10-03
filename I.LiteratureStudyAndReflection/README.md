@@ -32,7 +32,8 @@ TIME | GOOGLE QUERIES | Description
 
 Timestamp | Problem | Notes | Idea | Expect to be Done
 --- | --- | --- | --- | ---
-asda | asdasd | asdasd | asda sd | asdasd
+20:00 | What is linq? | I have issue to understand what Linq is, which purpose does Linq have, is there any advantage linq does have over SQL ?  | Suggestion: I could google and hopefully find some nice article or blog that explains why people choose Linq and which advantage does Linq have over SQL. I guess stackoverflow will be a great place to start | 20:10
+
 
 
 

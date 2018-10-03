@@ -39,7 +39,7 @@ Timestamp | Problem | Notes | Idea | Expect to be Done
 
 
 ### Conclusion:
-> _A brief summary of which aspect of the exercise was taking you the longest time to solve, which part of the exercise was side tracking you the most (which dead-ends did you pursue), and what was the most helpful information you came across (it could be someone else helping you). How can you avoid those problems in the future, and how can the helpful ressources help you in the future?_
+> _A brief summary of which aspect of the exercise was taking you the longest time to solve, which part of the exercise was side tracking you the most (which dead-ends did you pursue), and what was the most helpful information you came across (it could be someone else helping you). How can you avoid those problems in the future, and how can the helpful resources help you in the future?_
 
 The assignment requires us to figure out how to avoid client side join using Linq as our query language, and we went through process from analyze the problem, figure out solutions and execute the solutions. The most challenging part of the assignment was actually get the basic understanding of Linq, in order to work properly you have to get a good understanding of the language and the purpose. So it took a while to do research in internet to understand Linq. 
 The most helpful source was Stackoverflow, there are many credible answers and explanation to our issue. In this case we couldn't really avoid the problem since it is part of the process to learn and understand Linq. 

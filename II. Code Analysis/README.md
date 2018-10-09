@@ -39,12 +39,14 @@ There are a bunch of pmd rules that should be considered and definitely have to 
 > _Notice: some checks will not find any issues with your code. You need to find some checks which actually finds issues in the code._
 
 > ### Exercise 2
-> You can again pick something from a project you have done yourself.
-- [DataAccessMongoDB.java](https://github.com/cph-cs241/UFO_Compilation/blob/master/II.%20Code%20Analysis/ProjectGutenberg_G9/src/main/java/data/DataAccessMongoDB.java) _(Cherry)_
-- [DataAccessMySQL.java](https://github.com/cph-cs241/UFO_Compilation/blob/master/II.%20Code%20Analysis/ProjectGutenberg_G9/src/main/java/data/DBConnectorMySQL.java) _(Andreas)_
 
-> - Profile result:
+> - Profile result: <br>
+Telemetry:
+![image](https://user-images.githubusercontent.com/16150075/46693808-2c9d1a00-cc0b-11e8-8479-836e956f66f2.png)
 
+Objects:
+![image](https://user-images.githubusercontent.com/16150075/46693936-99181900-cc0b-11e8-9bce-aae1987de0e8.png)
 
+Methods:
+![image](https://user-images.githubusercontent.com/16150075/46694075-01ff9100-cc0c-11e8-80cc-9e6bd71066b9.png)
 
-> - Micro-benchmark:

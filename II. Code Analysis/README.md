@@ -39,8 +39,9 @@ There are a bunch of pmd rules that should be considered and definitely have to 
 > _Notice: some checks will not find any issues with your code. You need to find some checks which actually finds issues in the code._
 
 > ### Exercise 2
+> Looking for the bottleneck…
+> - Profile result:
 
-> - Profile result: <br>
 Telemetry:
 ![image](https://user-images.githubusercontent.com/16150075/46693808-2c9d1a00-cc0b-11e8-8479-836e956f66f2.png)
 

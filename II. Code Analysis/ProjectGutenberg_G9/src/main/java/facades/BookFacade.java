@@ -30,9 +30,8 @@ public class BookFacade implements IBookFacade {
         //Remember to add the valid input checker
         city = city.trim();
 
-        if (!helper.checkValidCityInput(city)) {
+        if (!helper.checkValidCityInput(city)) 
             throw new InvalidInputExceptionMapper("Invalid Input");
-        }
         try {
             List<IBook> books = new ArrayList<IBook>();
             if (city != null && city.length() > 0) {

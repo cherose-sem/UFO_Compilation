@@ -41,9 +41,10 @@ There are a bunch of pmd rules that should be considered and definitely have to 
 > ### Exercise 2
 > Looking for the bottleneck…
 > - Profile result:
+We've used the Netbeans Profiler in analyzing the application. As you can see below, it illustrates the dashboard of the application's live performance such as the amount of CPU and GC, memory and threads being used while it is running.
 
 Telemetry:
-![image](https://user-images.githubusercontent.com/16150075/46693808-2c9d1a00-cc0b-11e8-8479-836e956f66f2.png)
+![image](https://user-images.githubusercontent.com/16150075/46697153-4c850b80-cc14-11e8-9402-330910a1e264.png)
 
 Objects:
 ![image](https://user-images.githubusercontent.com/16150075/46693936-99181900-cc0b-11e8-9bce-aae1987de0e8.png)

@@ -11,7 +11,7 @@ You can find the PMD report [here](https://github.com/cph-cs241/UFO_Compilation/
 
 ![PMD Report](https://user-images.githubusercontent.com/16150075/46692604-09bd3680-cc08-11e8-882d-78f2ae3de33a.png)
 
-_The pmd report shows that we have a couple of unused imports, variables and unnecessary modifiers in the interfaces. Cleaning/Refactoring could have been great :)_
+_The pmd report shows that we have quite a lot of unused imports, unused local variables and unnecessary modifiers in the interfaces. Cleaning/Refactoring could have been great :)_
 
 > - A small report (I prefer a markdown in the same github) stating why you picked the 10 checks you did, and why those are important
 

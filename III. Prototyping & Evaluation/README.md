@@ -10,11 +10,11 @@
 
 There are digital ocean droplets running in different parts of the world. The are all set up to respond to ping. Their addresses are the following:
 
-> http://139.59.132.185:8080
-> http://192.81.216.124:8080
-> http://128.199.180.131:8080
+- http://139.59.132.185:8080
+- http://192.81.216.124:8080
+- http://128.199.180.131:8080
 
-> ### 1. Plan
+### 1. Plan
 
 **Formulate a hypothesis/problem statement about behavior of response times of these three servers.** 
 
@@ -26,7 +26,7 @@ Thence our hypothesis is :
 
 
 
-> #### 2. Setup
+#### 2. Setup
 
 **Plan an experiment, which measures response times of these three servers.**
 
@@ -62,9 +62,8 @@ http://128.199.180.131:8080
 
 
 
-> #### 3. Execute
+#### 3. Execute
  **Execute the experiment, which measures response times of these three servers.**
 
-
-> #### 4. Evaluate
+#### 4. Evaluate
  **Evaluate your experiment and interpret the measurements and results.**

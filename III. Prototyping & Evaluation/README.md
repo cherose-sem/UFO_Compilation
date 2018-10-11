@@ -16,7 +16,7 @@ There are digital ocean droplets running in different parts of the world. The ar
 
 > ### 1. Plan
 
-> **Formulate a hypothesis/problem statement about behavior of response times of these three servers.** 
+**Formulate a hypothesis/problem statement about behavior of response times of these three servers.** 
 
 The servers is located in different places in the world and we assumes that the distance from the request-source to the location of the server will determine the response latency very visible.
 
@@ -28,7 +28,7 @@ Thence our hypothesis is :
 
 > #### 2. Setup
 
-> **Plan an experiment, which measures response times of these three servers.**
+**Plan an experiment, which measures response times of these three servers.**
 
 We have to gain 3 given facts about the servers:
 
@@ -63,8 +63,8 @@ http://128.199.180.131:8080
 
 
 > #### 3. Execute
-> **Execute the experiment, which measures response times of these three servers.**
+ **Execute the experiment, which measures response times of these three servers.**
 
 
 > #### 4. Evaluate
-> **Evaluate your experiment and interpret the measurements and results.**
+ **Evaluate your experiment and interpret the measurements and results.**

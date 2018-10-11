@@ -46,19 +46,19 @@ There are many places where we can get information about the location of the ip.
 http://139.59.132.185:8080
 (Germany)
 ``` 
-![](https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png =250x250)
+Screenshot: https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png
 
 ```
 http://192.81.216.124:8080
 (USA)
 ```
-!(https://gyazo.com/5a36cdb7606e492645bc1847eacd448e.png)
+Screenshot: https://gyazo.com/5a36cdb7606e492645bc1847eacd448e.png
 
 ```
 http://128.199.180.131:8080
 (Singapore)
 ```
-![GitHub Logo](https://gyazo.com/f336814a849e51cddc23cf47a9e5b811.png)
+Screenshot: https://gyazo.com/f336814a849e51cddc23cf47a9e5b811.png
 
 
 

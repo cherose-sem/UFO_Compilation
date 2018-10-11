@@ -1,9 +1,9 @@
 # III. Prototyping & Evaluation, Documentation
 
 ---
-**Title**: Prototyping & Evaluation, Documentation
-**Author**: Andreas Styltsvig (cph-as283),Cherry Rose Semeña(cph-cs241)
-**Date**: 11/10/2018
+- **Title**: Prototyping & Evaluation, Documentation
+- **Author**: Andreas Styltsvig (cph-as283),Cherry Rose Semeña(cph-cs241)
+- **Date**: 11/10/2018
 
 
 > ## Exercise 1 
@@ -26,7 +26,7 @@ Thence our hypothesis is :
 
 
 
-#### 2. Setup
+### 2. Setup
 
 **Plan an experiment, which measures response times of these three servers.**
 
@@ -62,8 +62,8 @@ http://128.199.180.131:8080
 
 
 
-#### 3. Execute
+### 3. Execute
  **Execute the experiment, which measures response times of these three servers.**
 
-#### 4. Evaluate
+### 4. Evaluate
  **Evaluate your experiment and interpret the measurements and results.**

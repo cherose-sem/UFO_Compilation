@@ -43,27 +43,51 @@ There are many places where we can get information about the location of the ip.
 
 
 ``` 
-http://139.59.132.185:8080
-(Germany)
+IP: 139.59.132.185
+Location: Germany
 ``` 
 Screenshot: https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png
 
 ```
-http://192.81.216.124:8080
-(USA)
+IP: 192.81.216.124
+Location: USA
 ```
 Screenshot: https://gyazo.com/5a36cdb7606e492645bc1847eacd448e.png
 
 ```
-http://128.199.180.131:8080
-(Singapore)
+IP: 128.199.180.131
+Location: Singapore
 ```
 Screenshot: https://gyazo.com/f336814a849e51cddc23cf47a9e5b811.png
 
 
+> 2. The distance between the server and our request-source
+
+To
+The current request-source localtion is :
+```
+IP: 5.179.80.204
+Location: (Copenhagen)
+```
+Screenshot : https://gyazo.com/5005a7a43bba13087b2dae0e2391b852.png
+
+Distance between locations using a distance calucator 
+https://www.distancecalculator.net/
+
+Copenhagen -> Germany (Frankfurt am main) 671 km.
+Copenhagen -> USA (North Bergen) 6188.02 km.
+Copenhagen -> Germany (Singapore) 9972.99 km.
+
+> 3. The response time for the server
+
+- Coding a bash script that pings the server
+- Calucating reponse time
+
 
 ### 3. Execute
 *Execute the experiment, which measures response times of these three servers.*
+
+
 
 ### 4. Evaluate
 *Evaluate your experiment and interpret the measurements and results.*

@@ -1,0 +1,17 @@
+
+Pinging 139.59.132.185 with 32 bytes of data:
+Reply from 139.59.132.185: bytes=32 time=16ms TTL=52
+Reply from 139.59.132.185: bytes=32 time=16ms TTL=52
+Reply from 139.59.132.185: bytes=32 time=16ms TTL=52
+Reply from 139.59.132.185: bytes=32 time=15ms TTL=52
+Reply from 139.59.132.185: bytes=32 time=16ms TTL=52
+Reply from 139.59.132.185: bytes=32 time=15ms TTL=52
+Reply from 139.59.132.185: bytes=32 time=16ms TTL=52
+Reply from 139.59.132.185: bytes=32 time=16ms TTL=52
+Reply from 139.59.132.185: bytes=32 time=16ms TTL=52
+Reply from 139.59.132.185: bytes=32 time=16ms TTL=52
+
+Ping statistics for 139.59.132.185:
+    Packets: Sent = 10, Received = 10, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 15ms, Maximum = 16ms, Average = 15ms

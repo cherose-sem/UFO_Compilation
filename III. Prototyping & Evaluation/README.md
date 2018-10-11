@@ -2,10 +2,9 @@
 
 ---
 - **Title**: Prototyping & Evaluation, Documentation
-- **Author**: Andreas Styltsvig (cph-as283),Cherry Rose Semeña(cph-cs241)
+- **Author**: Andreas Styltsvig (cph-as283) & Cherry Rose Semeña(cph-cs241)
 - **Date**: 11/10/2018
-
-
+---
 > ## Exercise 1 
 
 There are digital ocean droplets running in different parts of the world. The are all set up to respond to ping. Their addresses are the following:
@@ -42,7 +41,7 @@ There are many places where we can get information about the location of the ip.
 
 
 
-``` 
+``` o
 IP: 139.59.132.185
 Location: Germany
 ``` 
@@ -64,14 +63,14 @@ Screenshot: https://gyazo.com/f336814a849e51cddc23cf47a9e5b811.png
 > 2. The distance between the server and our request-source
 
 To
-The current request-source localtion is :
+The current request-source location is :
 ```
 IP: 5.179.80.204
 Location: (Copenhagen)
 ```
 Screenshot : https://gyazo.com/5005a7a43bba13087b2dae0e2391b852.png
 
-Distance between locations using a distance calucator 
+Distance between locations using a distance calculator 
 https://www.distancecalculator.net/
 
 - Copenhagen -> Germany (Frankfurt am main) 671 km.
@@ -81,8 +80,21 @@ https://www.distancecalculator.net/
 > 3. The response time for the server
 
 - Coding a bash script that pings the server
-- Calucating reponse time
+- Calculating response time
+- Saves the response time in a txt file so we can analyze and evaluate the results
 
+
+**pingBot.sh**
+```sh
+
+echo "Pinging Germany"
+ping 139.59.132.185 -n 10 -l 32 >> ping_germany.txt
+echo "Pinging USA"
+ping 192.81.216.124 -n 10 -l 32 >> ping_USA.txt
+echo "Pinging Singapore"
+ping 128.199.180.131 -n 10 -l 32 >> ping_singapore.txt
+echo "Finish & exiting"
+```
 
 ### 3. Execute
 *Execute the experiment, which measures response times of these three servers.*

@@ -1,0 +1,17 @@
+
+Pinging 128.199.180.131 with 32 bytes of data:
+Reply from 128.199.180.131: bytes=32 time=198ms TTL=51
+Reply from 128.199.180.131: bytes=32 time=198ms TTL=51
+Reply from 128.199.180.131: bytes=32 time=197ms TTL=51
+Reply from 128.199.180.131: bytes=32 time=200ms TTL=51
+Reply from 128.199.180.131: bytes=32 time=198ms TTL=51
+Reply from 128.199.180.131: bytes=32 time=197ms TTL=51
+Reply from 128.199.180.131: bytes=32 time=197ms TTL=51
+Reply from 128.199.180.131: bytes=32 time=198ms TTL=51
+Reply from 128.199.180.131: bytes=32 time=198ms TTL=51
+Reply from 128.199.180.131: bytes=32 time=198ms TTL=51
+
+Ping statistics for 128.199.180.131:
+    Packets: Sent = 10, Received = 10, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 197ms, Maximum = 200ms, Average = 197ms

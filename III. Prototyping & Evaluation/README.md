@@ -46,7 +46,7 @@ There are many places where we can get information about the location of the ip.
 http://139.59.132.185:8080
 (Germany)
 ``` 
-!(https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png =250x250)
+![](https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png =250x250)
 
 ```
 http://192.81.216.124:8080

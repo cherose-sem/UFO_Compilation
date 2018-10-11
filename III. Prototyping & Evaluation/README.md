@@ -46,13 +46,13 @@ There are many places where we can get information about the location of the ip.
 http://139.59.132.185:8080
 (Germany)
 ``` 
-![GitHub Logo](https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png)
+!(https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png =250x250)
 
 ```
 http://192.81.216.124:8080
 (USA)
 ```
-![GitHub Logo](https://gyazo.com/5a36cdb7606e492645bc1847eacd448e.png)
+!(https://gyazo.com/5a36cdb7606e492645bc1847eacd448e.png)
 
 ```
 http://128.199.180.131:8080

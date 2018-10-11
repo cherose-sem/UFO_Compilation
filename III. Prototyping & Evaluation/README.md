@@ -74,9 +74,9 @@ Screenshot : https://gyazo.com/5005a7a43bba13087b2dae0e2391b852.png
 Distance between locations using a distance calucator 
 https://www.distancecalculator.net/
 
-Copenhagen -> Germany (Frankfurt am main) 671 km.
-Copenhagen -> USA (North Bergen) 6188.02 km.
-Copenhagen -> Germany (Singapore) 9972.99 km.
+- Copenhagen -> Germany (Frankfurt am main) 671 km.
+- Copenhagen -> USA (North Bergen) 6188.02 km.
+- Copenhagen -> Germany (Singapore) 9972.99 km.
 
 > 3. The response time for the server
 

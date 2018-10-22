@@ -14,8 +14,9 @@ There are digital ocean droplets running in different parts of the world. The ar
 - http://192.81.216.124:8080
 - http://128.199.180.131:8080
 
+---
 ### 1. Plan
-
+---
 *Formulate a hypothesis/problem statement about behavior of response times of these three servers.* 
 
 The servers is located in different places in the world and we assumes that the distance from the request-source to the location of the server will determine the response latency very visible.
@@ -25,9 +26,9 @@ Thence our hypothesis is :
 > "The distance to the location of the server will determine the response latency in MiliSeconds(MS), so we assumes that the further distance is, the latency will increase"
 
 
-
+---
 ### 2. Setup
-
+---
 *Plan an experiment, which measures response times of these three servers.*
 
 We have to gain 3 given facts about the servers:
@@ -119,7 +120,9 @@ ping 128.199.180.131 -n 10 -l 32 >> ping_singapore.txt
 echo "Finish & exiting"
 ```
 
+---
 ### 3. Execute
+---
 *Execute the experiment, which measures response times of these three servers.*
 
 Do following steps to start the `pingBot.sh`
@@ -140,7 +143,10 @@ echo "Finish & exiting"
 4. Use the result to whatever you want (Analyze, visualization, discussion)
 5. Profit
 
+---
 ### 4. Evaluate
+---
+
 *Evaluate your experiment and interpret the measurements and results.*
 
 

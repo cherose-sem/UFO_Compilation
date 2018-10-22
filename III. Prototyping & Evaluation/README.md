@@ -39,7 +39,7 @@ We have to gain 3 given facts about the servers:
 	2. The distance between the server and our request-source
 	3. The response time for the server
 
-> 1. The locations
+1. **The locations**
 
 There are many places where we can get information about the location of the ip. As start we will be using a iplocation lookup provider (https://www.iplocation.net/).
 
@@ -65,7 +65,7 @@ Location: Singapore
 Screenshot: https://gyazo.com/f336814a849e51cddc23cf47a9e5b811.png
 
 
-> 2. The distance between the server and our request-source
+2. **The distance between the server and our request-source**
 
 We will test from 3 different locations.
 
@@ -98,7 +98,7 @@ https://www.distancecalculator.net/
 - ?? -> Germany (Singapore) 9972.99 km.
 
 
-> 3. The response time for the server
+3. **The response time for the server**
 
 We have to measure the response time from the server, and collect the data. So i need to setup an experiment that will provide me data about latency between my location and the server.
 

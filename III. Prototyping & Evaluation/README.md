@@ -50,19 +50,19 @@ The results are listed here:
 IP: 139.59.132.185
 Location: Germany
 ``` 
-Screenshot: https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png
+![Screenshot1](https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png)
 
 ```
 IP: 192.81.216.124
 Location: USA
 ```
-Screenshot: https://gyazo.com/5a36cdb7606e492645bc1847eacd448e.png
+![Screenshot2](https://gyazo.com/5a36cdb7606e492645bc1847eacd448e.png)
 
 ```
 IP: 128.199.180.131
 Location: Singapore
 ```
-Screenshot: https://gyazo.com/f336814a849e51cddc23cf47a9e5b811.png
+![Screenshot3](https://gyazo.com/f336814a849e51cddc23cf47a9e5b811.png)
 
 
 2. **The distance between the server and our request-source**
@@ -77,7 +77,7 @@ Location 3 : A digital droplet located in ??
 IP: 5.179.80.204
 Location: (Copenhagen)
 ```
-Screenshot : https://gyazo.com/5005a7a43bba13087b2dae0e2391b852.png
+![Screenshot4](https://gyazo.com/5005a7a43bba13087b2dae0e2391b852.png)
 
 Distance between locations using a distance calculator 
 https://www.distancecalculator.net/

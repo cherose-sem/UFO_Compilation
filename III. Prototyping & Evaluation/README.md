@@ -14,6 +14,8 @@ There are digital ocean droplets running in different parts of the world. The ar
 - http://192.81.216.124:8080
 - http://128.199.180.131:8080
 
+
+
 ### 1. Plan
 ---
 *Formulate a hypothesis/problem statement about behavior of response times of these three servers.* 
@@ -23,6 +25,8 @@ The servers is located in different places in the world and we assumes that the 
 Thence our hypothesis is : 
 
 > "The distance to the location of the server will determine the response latency in MiliSeconds(MS), so we assumes that the further distance is, the latency will increase"
+
+
 
 
 ### 2. Setup
@@ -119,6 +123,8 @@ echo "Finish & exiting"
 ```
 
 
+
+
 ### 3. Execute
 ---
 *Execute the experiment, which measures response times of these three servers.*
@@ -140,6 +146,9 @@ echo "Finish & exiting"
 3. You should now see 3 new files in same directory you have `pingBot.sh`, these 3 files contains result from pinging.
 4. Use the result to whatever you want (Analyze, visualization, discussion)
 5. Profit
+
+
+
 
 ### 4. Evaluate
 ---

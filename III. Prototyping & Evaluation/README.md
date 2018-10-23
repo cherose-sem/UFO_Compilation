@@ -346,10 +346,35 @@ Approximate round trip times in milli-seconds:
 ![alt text](./images/chart_distance.png)
 
 
-## 4.1 Analyze
+## 4.1 Analyze and conclusion
+
+The data is now collected and presented.
+
+As we can monitor, that the distacne between the host and server have a heavily influerence on latency.
+
+As per example showed here:
+
+Location 1 -> Server in Singapore you will have reponse time on 197 ms while location 1 -> germany you will have reponsetime on 15 ms. And the distance is 9977 km to singapore while you have 679 km to Germany.
+
+The scatter plotter here shows the plots where distance is labelled in x - axis and latency labelled in y axis. You will see a trendline for latency with r^2 value on 0.90. You will use r^2 as a statistical measurement of how close the data are to the fitted regression line.
+
+Citation from www.blog.minitavb.com
+
+```
+The definition of R-squared is fairly straight-forward; it is the percentage of the response variable variation that is explained by a linear model. Or:
+
+R-squared = Explained variation / Total variation
+
+R-squared is always between 0 and 100%:
+
+0% indicates that the model explains none of the variability of the response data around its mean.
+100% indicates that the model explains all the variability of the response data around its mean.
+In general, the higher the R-squared, the better the model fits your data. 
+```
 
 ![alt text](./images/trendline.png)
 
+So with the r^2 result, you can say that my hypotese in this case is deviant by 0,1 r^2. So we can conclude that our hypothese is close to the absolute truth
 
 
 

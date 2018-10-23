@@ -322,5 +322,34 @@ Approximate round trip times in milli-seconds:
 ---
 
 
+### Summary
+
+#### Average latency in MS
+
+|  				| Server location |
+| Host location | Germany | Usa | Singapore |
+| ------------- | ------------- |
+| Location 1 (Lyngby)  | 15ms  | 88ms  | 197ms  |
+| Location 2 (Copenhagen) | 27ms | 96ms  | 189ms  |
+| Location 3 (Digital droplet in Usa) | 83ms  | 2ms  | 268ms |
+
+![alt text](./images/graph_latency.png)
+
+#### Distance in KM
+
+|  				| Server location |
+| Host location | Germany | Usa | Singapore |
+| ------------- | ------------- |
+| Location 1 (Lyngby)  | 679km  | 6179km  | 9977km  |
+| Location 2 (Copenhagen) | 679km | 6188km  | 9972km  |
+| Location 3 (Digital droplet in Usa) | 6282km  | 89km  | 15424km |
+
+
+![alt text](./images/graph_distance.png)
+
+
 ## 4.1 Analyze
+
+
+
 

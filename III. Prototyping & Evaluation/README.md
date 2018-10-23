@@ -348,6 +348,8 @@ Approximate round trip times in milli-seconds:
 
 ## 4.1 Analyze
 
+![alt text](./images/tendline.png)
+
 
 
 

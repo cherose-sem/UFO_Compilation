@@ -168,9 +168,9 @@ echo "Finish & exiting"
 *Evaluate your experiment and interpret the measurements and results.*
 
 
-#### Results
+### Results
 
-##### **From Lyngby**
+#### **From Lyngby**
 
 **Germany** 
 ```txt
@@ -239,7 +239,7 @@ Approximate round trip times in milli-seconds:
 ```
 
 
-##### **From my home in copenhagen**
+#### **From my home in copenhagen**
 
 **Germany**
 ```txt
@@ -309,7 +309,7 @@ Approximate round trip times in milli-seconds:
 ```
 
 
-##### **From a digital droplet in New Jersay USA**
+#### **From a digital droplet in New Jersay USA**
 
 **Germany**
 

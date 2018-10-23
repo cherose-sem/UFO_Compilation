@@ -17,7 +17,6 @@ There are digital ocean droplets running in different parts of the world. The ar
 
 
 ## 1. Plan
----
 *Formulate a hypothesis/problem statement about behavior of response times of these three servers.* 
 
 The servers is located in different places in the world and we assumes that the distance from the request-source to the location of the server will determine the response latency very visible.
@@ -30,7 +29,6 @@ Thence our hypothesis is :
 
 
 ## 2. Setup
----
 *Plan an experiment, which measures response times of these three servers.*
 
 We have to gain 3 given facts about the servers:
@@ -138,7 +136,6 @@ echo "Finish & exiting"
 
 
 ## 3. Execute
----
 *Execute the experiment, which measures response times of these three servers.*
 
 Do following steps to start the `pingBot.sh`
@@ -163,8 +160,6 @@ echo "Finish & exiting"
 
 
 ## 4. Evaluate
----
-
 *Evaluate your experiment and interpret the measurements and results.*
 
 
@@ -237,6 +232,7 @@ Approximate round trip times in milli-seconds:
     Minimum = 197ms, Maximum = 200ms, Average = 197ms
 
 ```
+---
 
 
 ### **From my home in copenhagen**
@@ -307,6 +303,7 @@ Approximate round trip times in milli-seconds:
     Minimum = 186ms, Maximum = 193ms, Average = 189ms
 
 ```
+---
 
 
 ### **From a digital droplet in New Jersay USA**
@@ -322,6 +319,7 @@ Approximate round trip times in milli-seconds:
 **Singapore**
 
 ![alt text](./images/ping_singapore.png)
+---
 
 
 ## 4.1 Analyze

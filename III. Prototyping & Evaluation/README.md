@@ -50,19 +50,18 @@ The results are listed here:
 IP: 139.59.132.185
 Location: Germany
 ``` 
-![Screenshot1](https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png)
-
+https://i.gyazo.com/f4e2615c4960c316b86c17722058de6a.png
 ```
 IP: 192.81.216.124
 Location: USA
 ```
-![Screenshot2](https://gyazo.com/5a36cdb7606e492645bc1847eacd448e.png)
+https://gyazo.com/5a36cdb7606e492645bc1847eacd448e.png
 
 ```
 IP: 128.199.180.131
 Location: Singapore
 ```
-![Screenshot3](https://gyazo.com/f336814a849e51cddc23cf47a9e5b811.png)
+https://gyazo.com/f336814a849e51cddc23cf47a9e5b811.png
 
 
 2. **The distance between the server and our request-source**
@@ -78,15 +77,12 @@ Location 3 : A digital droplet located in ??
 IP: 5.179.80.204
 Location: Denmark (Lyngby)
 ```
-![Screenshot4](https://gyazo.com/5005a7a43bba13087b2dae0e2391b852.png)
-
 
 **Location 2** 
 ```
 IP: x.x.x.x.x
 Location: Denmark (Copenhagen)
 ```
-
 
 **Location 3** 
 ```
@@ -97,6 +93,7 @@ Location: Usa (New Jersey)
 Distance between locations using a distance calculator 
 https://www.distancecalculator.net/
 
+```
 **Location 1**
 - Lyngby -> Germany (Frankfurt am main) 679 km.
 - Lyngby -> USA (North Bergen) 6179.90 km.
@@ -111,7 +108,7 @@ https://www.distancecalculator.net/
 - New Jersey -> Germany (Frankfurt am main) 6282.38 km.
 - New Jersey -> USA (North Bergen) 89.48 km.
 - New Jersey -> Germany (Singapore) 15424.19 km.
-
+``` 
 
 3. **The response time for the server**
 
@@ -174,7 +171,8 @@ echo "Finish & exiting"
 **Results**
 
 **From Lyngby**
-> Germany
+
+**Germany** 
 ```txt
 
 Pinging 139.59.132.185 with 32 bytes of data:
@@ -196,7 +194,7 @@ Approximate round trip times in milli-seconds:
 
 ```
 
-> Usa
+**Usa**
 ```
 
 Pinging 192.81.216.124 with 32 bytes of data:
@@ -218,7 +216,7 @@ Approximate round trip times in milli-seconds:
 
 ```
 
-> Singapore
+**Singapore**
 ```
 
 Pinging 128.199.180.131 with 32 bytes of data:
@@ -242,7 +240,8 @@ Approximate round trip times in milli-seconds:
 
 
 **From my home in copenhagen**
-> Germany
+
+**Germany**
 ```txt
 
 Pinging 139.59.132.185 with 32 bytes of data:
@@ -265,7 +264,7 @@ Approximate round trip times in milli-seconds:
 
 ```
 
-> Usa
+**Usa**
 ```txt
 
 Pinging 192.81.216.124 with 32 bytes of data:
@@ -287,7 +286,7 @@ Approximate round trip times in milli-seconds:
 
 ```
 
-> Singapore
+**Singapore**
 ```txt
 
 Pinging 128.199.180.131 with 32 bytes of data:

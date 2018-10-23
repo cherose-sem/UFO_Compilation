@@ -16,7 +16,7 @@ There are digital ocean droplets running in different parts of the world. The ar
 
 
 
-### 1. Plan
+## 1. Plan
 ---
 *Formulate a hypothesis/problem statement about behavior of response times of these three servers.* 
 
@@ -29,7 +29,7 @@ Thence our hypothesis is :
 
 
 
-### 2. Setup
+## 2. Setup
 ---
 *Plan an experiment, which measures response times of these three servers.*
 
@@ -137,7 +137,7 @@ echo "Finish & exiting"
 
 
 
-### 3. Execute
+## 3. Execute
 ---
 *Execute the experiment, which measures response times of these three servers.*
 
@@ -162,7 +162,7 @@ echo "Finish & exiting"
 
 
 
-### 4. Evaluate
+## 4. Evaluate
 ---
 
 *Evaluate your experiment and interpret the measurements and results.*
@@ -170,7 +170,7 @@ echo "Finish & exiting"
 
 ### Results
 
-#### **From Lyngby**
+### **From Lyngby**
 
 **Germany** 
 ```txt
@@ -239,7 +239,7 @@ Approximate round trip times in milli-seconds:
 ```
 
 
-#### **From my home in copenhagen**
+### **From my home in copenhagen**
 
 **Germany**
 ```txt
@@ -309,7 +309,7 @@ Approximate round trip times in milli-seconds:
 ```
 
 
-#### **From a digital droplet in New Jersay USA**
+### **From a digital droplet in New Jersay USA**
 
 **Germany**
 
@@ -324,5 +324,5 @@ Approximate round trip times in milli-seconds:
 ![alt text](./images/ping_singapore.png)
 
 
-### 4.1 Analyze
+## 4.1 Analyze
 

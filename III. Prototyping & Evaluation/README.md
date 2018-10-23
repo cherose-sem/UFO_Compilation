@@ -73,11 +73,26 @@ Location 1 : The school located in CPH-business, Lyngby, Denmark
 Location 2 : Home located in Vanloese, Copenhagen, Denmark
 Location 3 : A digital droplet located in ??
 
+**Location 1** 
 ```
 IP: 5.179.80.204
-Location: (Copenhagen)
+Location: Denmark (Lyngby)
 ```
 ![Screenshot4](https://gyazo.com/5005a7a43bba13087b2dae0e2391b852.png)
+
+
+**Location 2** 
+```
+IP: x.x.x.x.x
+Location: Denmark (Copenhagen)
+```
+
+
+**Location 3** 
+```
+IP: 104.248.238.12
+Location: Usa (New Jersey)
+```
 
 Distance between locations using a distance calculator 
 https://www.distancecalculator.net/
@@ -93,9 +108,9 @@ https://www.distancecalculator.net/
 - Copenhagen -> Germany (Singapore) 9972.99 km.
 
 **Location 3**
-- ?? -> Germany (Frankfurt am main) 671 km.
-- ?? -> USA (North Bergen) 6188.02 km.
-- ?? -> Germany (Singapore) 9972.99 km.
+- New Jersey -> Germany (Frankfurt am main) 6282.38 km.
+- New Jersey -> USA (North Bergen) 89.48 km.
+- New Jersey -> Germany (Singapore) 15424.19 km.
 
 
 3. **The response time for the server**
@@ -158,6 +173,7 @@ echo "Finish & exiting"
 
 **Results**
 
+**From Lyngby**
 > Germany
 ```txt
 
@@ -223,4 +239,90 @@ Approximate round trip times in milli-seconds:
     Minimum = 197ms, Maximum = 200ms, Average = 197ms
 
 ```
+
+
+**From my home in copenhagen**
+> Germany
+```txt
+
+Pinging 139.59.132.185 with 32 bytes of data:
+Reply from 139.59.132.185: bytes=32 time=25ms TTL=48
+Reply from 139.59.132.185: bytes=32 time=24ms TTL=48
+Reply from 139.59.132.185: bytes=32 time=32ms TTL=48
+Reply from 139.59.132.185: bytes=32 time=23ms TTL=48
+Reply from 139.59.132.185: bytes=32 time=24ms TTL=48
+Reply from 139.59.132.185: bytes=32 time=30ms TTL=48
+Reply from 139.59.132.185: bytes=32 time=28ms TTL=48
+Reply from 139.59.132.185: bytes=32 time=30ms TTL=48
+Reply from 139.59.132.185: bytes=32 time=34ms TTL=48
+Reply from 139.59.132.185: bytes=32 time=26ms TTL=48
+
+Ping statistics for 139.59.132.185:
+    Packets: Sent = 10, Received = 10, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 23ms, Maximum = 34ms, Average = 27ms
+
+
+```
+
+> Usa
+```txt
+
+Pinging 192.81.216.124 with 32 bytes of data:
+Reply from 192.81.216.124: bytes=32 time=97ms TTL=53
+Reply from 192.81.216.124: bytes=32 time=95ms TTL=53
+Reply from 192.81.216.124: bytes=32 time=95ms TTL=53
+Reply from 192.81.216.124: bytes=32 time=94ms TTL=53
+Reply from 192.81.216.124: bytes=32 time=96ms TTL=53
+Reply from 192.81.216.124: bytes=32 time=97ms TTL=53
+Reply from 192.81.216.124: bytes=32 time=94ms TTL=53
+Reply from 192.81.216.124: bytes=32 time=99ms TTL=53
+Reply from 192.81.216.124: bytes=32 time=96ms TTL=53
+Reply from 192.81.216.124: bytes=32 time=99ms TTL=53
+
+Ping statistics for 192.81.216.124:
+    Packets: Sent = 10, Received = 10, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 94ms, Maximum = 99ms, Average = 96ms
+
+```
+
+> Singapore
+```txt
+
+Pinging 128.199.180.131 with 32 bytes of data:
+Reply from 128.199.180.131: bytes=32 time=188ms TTL=48
+Reply from 128.199.180.131: bytes=32 time=188ms TTL=48
+Reply from 128.199.180.131: bytes=32 time=186ms TTL=48
+Reply from 128.199.180.131: bytes=32 time=190ms TTL=48
+Reply from 128.199.180.131: bytes=32 time=187ms TTL=48
+Reply from 128.199.180.131: bytes=32 time=193ms TTL=48
+Reply from 128.199.180.131: bytes=32 time=193ms TTL=48
+Reply from 128.199.180.131: bytes=32 time=191ms TTL=48
+Reply from 128.199.180.131: bytes=32 time=189ms TTL=48
+Reply from 128.199.180.131: bytes=32 time=189ms TTL=48
+
+Ping statistics for 128.199.180.131:
+    Packets: Sent = 10, Received = 10, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 186ms, Maximum = 193ms, Average = 189ms
+
+```
+
+
+**From a digital droplet in New Jersay USA**
+> Germany
+
+![alt text](/images/ping_germany.png)
+
+> Usa
+
+![alt text](/images/ping_usa.png)
+
+> Singapore
+
+![alt text](/images/ping_singapore.png)
+
+
+### 4.1 Analyze
 

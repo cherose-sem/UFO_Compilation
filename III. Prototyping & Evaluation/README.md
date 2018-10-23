@@ -312,12 +312,15 @@ Approximate round trip times in milli-seconds:
 **From a digital droplet in New Jersay USA**
 
 **Germany**
+
 ![alt text](./images/ping_germany.png)
 
 **Usa**
+
 ![alt text](./images/ping_usa.png)
 
 **Singapore**
+
 ![alt text](./images/ping_singapore.png)
 
 

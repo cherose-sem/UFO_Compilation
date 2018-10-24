@@ -374,7 +374,7 @@ In general, the higher the R-squared, the better the model fits your data.
 
 ![alt text](./images/trendline.png)
 
-So with the r^2 result, you can say that the hypothesis on this case is deviant by 0,1 r^2. So we can conclude that our hypothese is close to the absolute truth.
+So with the r^2 result, you can say that the hypothesis on this case is deviant by 0,1 r^2. So we can conclude that our hypothesis is close to the absolute truth.
 
 
 

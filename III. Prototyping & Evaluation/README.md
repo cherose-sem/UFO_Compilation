@@ -19,11 +19,11 @@ There are digital ocean droplets running in different parts of the world. The ar
 ## 1. Plan
 *Formulate a hypothesis/problem statement about behavior of response times of these three servers.* 
 
-The servers is located in different places in the world and we assumes that the distance from the request-source to the location of the server will determine the response latency very visible.
+The servers is located in different places in the world and we assume that the distance from the request-source to the location of the server will determine the response latency very visible.
 
 Thence our hypothesis is : 
 
-> "The distance to the location of the server will determine the response latency in MiliSeconds(MS), so we assumes that the further distance is, the latency will increase"
+> "The distance to the location of the server will determine the response latency in MiliSeconds(MS), so we assume that the further distance is, the latency will increase."
 
 
 
@@ -67,7 +67,7 @@ https://gyazo.com/f336814a849e51cddc23cf47a9e5b811.png
 We will test from 3 different locations.
 
 Location 1 : The school located in CPH-business, Lyngby, Denmark
-Location 2 : Home located in Vanloese, Copenhagen, Denmark
+Location 2 : Home located in Vanløse, Copenhagen, Denmark
 Location 3 : A digital droplet located in ??
 
 **Location 1** 
@@ -110,15 +110,15 @@ https://www.distancecalculator.net/
 
 3. **The response time for the server**
 
-We have to measure the response time from the server, and collect the data. So i need to setup an experiment that will provide me data about latency between my location and the server.
+We have to measure the response time from the server, and collect the data. So we need to setup an experiment that will provide data about latency between location and the server.
 
-**To do that, i would do something like that:**
+**To do that, we would do something like this:**
 1. Coding a bash script that pings the server and measure response time
 2. Store the result in a txt file
 3. Visualize the result
 
 
-So i spend some few moment to make a bash script that pings the server and save the result into a txt file.
+So I spent some moment to make a bash script that pings the server and save the result into a text file.
 
 **pingBot.sh**
 ```sh
@@ -141,7 +141,7 @@ echo "Finish & exiting"
 Do following steps to start the `pingBot.sh`
 
 1. Create a new file, and call it `pingBot.sh`
-it should contains following code: 
+It should contains following code: 
 ```
 echo "Pinging Germany"
 ping 139.59.132.185 -n 10 -l 32 >> ping_germany.txt
@@ -189,7 +189,7 @@ Approximate round trip times in milli-seconds:
 
 ```
 
-**Usa**
+**USA**
 ```
 
 Pinging 192.81.216.124 with 32 bytes of data:
@@ -235,7 +235,7 @@ Approximate round trip times in milli-seconds:
 ---
 
 
-### **From my home in copenhagen**
+### **From my home in Copenhagen**
 
 **Germany**
 ```txt
@@ -260,7 +260,7 @@ Approximate round trip times in milli-seconds:
 
 ```
 
-**Usa**
+**USA**
 ```txt
 
 Pinging 192.81.216.124 with 32 bytes of data:
@@ -312,7 +312,7 @@ Approximate round trip times in milli-seconds:
 
 ![alt text](./images/ping_germany.png)
 
-**Usa**
+**USA**
 
 ![alt text](./images/ping_usa.png)
 
@@ -330,7 +330,7 @@ Approximate round trip times in milli-seconds:
 | ------------- | ------------- | ------------- | ------------- | 
 | Location 1 (Lyngby)  | 15ms  | 88ms  | 197ms  |
 | Location 2 (Copenhagen) | 27ms | 96ms  | 189ms  |
-| Location 3 (Digital droplet in Usa) | 83ms  | 2ms  | 268ms |
+| Location 3 (Digital droplet in USA) | 83ms  | 2ms  | 268ms |
 
 ![alt text](./images/chart_latency.png)
 
@@ -340,25 +340,25 @@ Approximate round trip times in milli-seconds:
 | ------------- | ------------- | ------------- |  ------------- | 
 | Location 1 (Lyngby)  | 679km  | 6179km  | 9977km  |
 | Location 2 (Copenhagen) | 679km | 6188km  | 9972km  |
-| Location 3 (Digital droplet in Usa) | 6282km  | 89km  | 15424km |
+| Location 3 (Digital droplet in USA) | 6282km  | 89km  | 15424km |
 
 
 ![alt text](./images/chart_distance.png)
 
 
-## 4.1 Analyze and conclusion
+## 4.1 Analyze and Conclusion
 
 The data is now collected and presented.
 
-As we can monitor, that the distacne between the host and server have a heavily influerence on latency.
+As we can monitor, that the distacne between the host and server have a heavily influence on latency.
 
 As per example showed here:
 
-Location 1 -> Server in Singapore you will have reponse time on 197 ms while location 1 -> germany you will have reponsetime on 15 ms. And the distance is 9977 km to singapore while you have 679 km to Germany.
+Location 1 -> Server in Singapore, you will have reponse time on 197 ms while location 1 -> In Germany, you will have response time on 15 ms. And the distance is 9977 km to Singapore while you have 679 km to Germany. 
 
 The scatter plotter here shows the plots where distance is labelled in x - axis and latency labelled in y axis. You will see a trendline for latency with r^2 value on 0.90. You will use r^2 as a statistical measurement of how close the data are to the fitted regression line.
 
-Citation from www.blog.minitavb.com
+Citation from www.blog.minitab.com
 
 ```
 The definition of R-squared is fairly straight-forward; it is the percentage of the response variable variation that is explained by a linear model. Or:
@@ -374,7 +374,7 @@ In general, the higher the R-squared, the better the model fits your data.
 
 ![alt text](./images/trendline.png)
 
-So with the r^2 result, you can say that my hypotese in this case is deviant by 0,1 r^2. So we can conclude that our hypothese is close to the absolute truth
+So with the r^2 result, you can say that the hypothesis on this case is deviant by 0,1 r^2. So we can conclude that our hypothese is close to the absolute truth.
 
 
 

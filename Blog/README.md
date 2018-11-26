@@ -48,6 +48,6 @@
 
 ***
 > **Authors:**
-- Andreas Sørbye Styltsvig
-- Cherry Rose Jimenez Semeña
-- Mahnaz Karimi
+> - Andreas Sørbye Styltsvig
+> - Cherry Rose Jimenez Semeña
+> - Mahnaz Karimi

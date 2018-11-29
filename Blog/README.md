@@ -38,22 +38,10 @@ Server monitoring system, whenever an error occurs on one of your server service
 
 
 **DevOps Scaling**
-
-> _state the problem_ <br>
-
-The system often experience break down or crushing performance due to huge amount of users' requests.
-
-> _say why it is interesting_ <br>
-
-Scaling can be really painful when the number of users grow, as well as the system.
-
-> _say what your solution achieves_ <br>
-
-Massive requests can be solved by enhancing the scalability of the system with the use different strategies such as vertical/horizontal scaling, or services scaled with Docker Swarm.
-
-> _say what follows from your solution_ <br>
-
-We chose to scale HackerNews project using horizontal scaling using Docker Swarm cluster.
+- Software application can often experience break down or system crash due to huge amount of users' requests.
+- Scaling is becoming cost-effective as the number of users increases, as well as when the system is growing and developed in time.
+- Massive requests failure can be solved by enhancing the scalability of the system with the use of different strategies such as vertical/horizontal scaling, or services scaled with Docker Swarm.
+- We chose to scale the Hackernews project using horizontal scaling and Docker swarm. chose to scale HackerNews project using horizontal scaling using Docker Swarm cluster.
 
 ***
 > **Authors:**

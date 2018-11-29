@@ -6,11 +6,12 @@
 
 > _state the problem_ <br>
 
-Not obtained in SLA agreement document.
+Some time the system is interrupted and out of reach or loses some data.
+
 
 > _say why it is interesting_ <br>
 
- Some time the system is interrupted and out of reach or loses some data.
+Google and the search provider sites do not like websites that are not of high quality. These web site are discontinued or lose information will lose their customers
 
 > _say what your solution achieves_ <br>
 

@@ -10,11 +10,12 @@ Not obtained in SLA agreement document.
 
 > _say why it is interesting_ <br>
 
-Server monitoring system, whenever an error occurs on one of your server services or your server is interrupted and out of reach, and ultimately affects hackers, You will be notified.
+ Some time the system is interrupted and out of reach or loses some data.
 
 > _say what your solution achieves_ <br>
 
-Link : https://snapshot.raintank.io/dashboard/snapshot/b3I9R55NgLkUHVUWIvHdHARAQoQbloYF
+Server monitoring system, whenever an error occurs on one of your server services or your server is interrupted and out of reach, and ultimately affects hackers, You will be notified.
+
 
 > _say what follows from your solution_ <br>
 
@@ -51,7 +52,6 @@ Massive requests can be solved by enhancing the scalability of the system with t
 
 > _say what follows from your solution_ <br>
 
-We chose to scale HackerNews project using horizontal scaling using Docker Swarm cluster.
 
 ***
 > **Authors:**

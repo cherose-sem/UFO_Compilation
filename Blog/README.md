@@ -51,6 +51,7 @@ Massive requests can be solved by enhancing the scalability of the system with t
 
 > _say what follows from your solution_ <br>
 
+We chose to scale HackerNews project using horizontal scaling using Docker Swarm cluster.
 
 ***
 > **Authors:**

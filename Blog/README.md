@@ -15,6 +15,14 @@
 - Google and the search provider sites do not like websites that are not of high quality. These web site that are discontinued or lose information will lose their customers
 - Server monitoring system, whenever an error occurs on one of your server services or your server is interrupted and out of reach, and ultimately affects hackers, You will be notified.
 - `say what follows from your solution`
+***
+CHERRY's Suggestion for Monitoring
+- System's functionalities may be interrupted anytime without the developers/operators' awareness.
+- Users would end up unsatisfied with system's performance or usability.
+- The combination of Prometheus' powerful metrics and Grafana's data visualization solve the problem.
+- In line with the Service-Level Agreement(SLA), monitoring the system's performance is easier with Prometheus and Grafana, wherein metrics are customized and alerts are set based on our needs.
+
+***
 
 **Logging**
 

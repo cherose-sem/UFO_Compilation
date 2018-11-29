@@ -6,12 +6,15 @@
 
 > _state the problem_ <br>
 
+Not obtained in SLA agreement document.
 
 > _say why it is interesting_ <br>
 
+Server monitoring system, whenever an error occurs on one of your server services or your server is interrupted and out of reach, and ultimately affects hackers, You will be notified.
 
 > _say what your solution achieves_ <br>
 
+Link : https://snapshot.raintank.io/dashboard/snapshot/b3I9R55NgLkUHVUWIvHdHARAQoQbloYF
 
 > _say what follows from your solution_ <br>
 

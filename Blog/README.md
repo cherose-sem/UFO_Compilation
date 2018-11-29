@@ -26,11 +26,9 @@ CHERRY's Suggestion for Monitoring
 
 **Logging with logstash**
 
-**
-
 - Any software application will have a probablity of system breakdown or unexpected behaviour. 
 - You can trace the errors by debugging the system manually, but the workload of debugging will follow with the size of system, and inevitiablity it will become an impossible task.
-- Logstash will have all of the logs aggregated into one place so you can see the process flow and perform queries against the logs from all applications from one place.
+- By using logstash as the log framework for any applicaiton, you will have all of the logs aggregated into one place so you can see the process flow and perform queries against the logs from all applications from one place.
 - We implemented the ELK stack, whichas logstash is a part of. The logstash provides us a excellent and centralized option to trace the error or unexpected behaviour.
 
 **Scaling**

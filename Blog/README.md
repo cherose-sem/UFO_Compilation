@@ -19,22 +19,6 @@
 
 - A system monitoring will give operators a great opportunity of monitoring performance of the system in real-time, and prevent any additional system breakdown.
 
-#### Other Topics:
-
-**Logging with logstash**
-
-- Any software application will have a probablity of system breakdown or unexpected behaviour.
-- You can trace the errors by debugging the system manually, but the workload of debugging will follow with the size of system, and inevitiablity it will become an impossible task.
-- By implement a logging system, you can have all of the logs aggregated into one place so you can see the process flow and perform queries against the logs from all applications from one place.
-- We implemented the ELK stack, whichas logstash is a part of. The logstash provides us a excellent and centralized option to trace the error or unexpected behaviour.
-
-**Scaling**
-
-- Software application can often experience break down or system crash due to huge amount of users' requests.
-- Scaling is becoming cost-effective as the number of users increases, as well as when the system is growing and developed in time.
-- Massive requests failure can be solved by enhancing the scalability of the system with the use of different strategies such as vertical/horizontal scaling, or services scaled with Docker Swarm.
-- We chose to scale the Hackernews project using horizontal scaling and Docker swarm.
-
 ***
 > **Authors:**
 > - Andreas Sørbye Styltsvig

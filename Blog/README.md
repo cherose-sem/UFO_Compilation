@@ -19,9 +19,9 @@
 
 #2 M
 -	Some time the system is interrupted and out of reach or loses some data, without developer know about it
--	Google and the search provider sites do not like websites that are not of high quality. These web site that are discontinued or lose information will lose their customers
+-These web site that are discontinued or lose information will lose their customers
 -	Server monitoring system, whenever an error occurs on one of your server services or your server is interrupted and out of reach, and ultimately affects hackers, You will be notified.
--	monitoring the system's performance with Prometheus and Grafana
+-	Monitoring the system's performance with Prometheus and Grafana solve the problem
 
 #3 A
 - _state the problem_ <br>

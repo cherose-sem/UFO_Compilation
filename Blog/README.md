@@ -11,13 +11,13 @@
 
 **Monitoring**
 
-- Any application might experience occurrence of system crash due to performance issue.
+- Application might experience occurrence of system crash due to performance issue.
 
 - The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload for tracing the reason to system crash will be a heavy work.
 
 - In line with the Service-Level Agreement(SLA), monitoring the system's performance is easier with Prometheus and Grafana, wherein metrics are customized and alerts are set based on our needs.
 
-- A system monitoring will give operators a great opportunity of monitoring performance of the system in real-time, and prevent any additional system breakdown.
+- A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown.
 
 ***
 > **Authors:**

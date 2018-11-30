@@ -13,7 +13,7 @@
 
 - Any application might experience occurrence of system crash due to performance issue.
 
-- The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload of trace the reason to system crash will be a heavy work.
+- The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload for tracing the reason to system crash will be a heavy work.
 
 - In line with the Service-Level Agreement(SLA), monitoring the system's performance is easier with Prometheus and Grafana, wherein metrics are customized and alerts are set based on our needs.
 

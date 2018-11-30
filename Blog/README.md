@@ -24,10 +24,10 @@
 -	Monitoring the system's performance with Prometheus and Grafana solve the problem
 
 #3 A
-- _state the problem_ <br>
-- _say why it is interesting_ <br>
-- _say what your solution achieves_ <br>
-- _say what follows from your solution_ <br>
+- Any application might experience occurence of system crash.
+- The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload of trace the reason to system creash will be a heavy work. 
+- A system montoring will give operatorers a great oppouritny of montoring performance of the system in realtime, and prevent any addtionale system breakdown.
+- Grafana with prometheus is a excellent monitoring tool, that will give operatorers a dashboard with graphs and informations about performance of the system. 
 
 #### Other Topics:
 

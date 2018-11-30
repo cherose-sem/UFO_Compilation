@@ -13,9 +13,9 @@
 
 #1 C
 - System's functionalities may be interrupted anytime without the developers/operators' awareness.
-- Users would end up unsatisfied with system's performance or usability.
-- The combination of Prometheus' powerful metrics and Grafana's data visualization solve the problem.
+- Monitoring the system's behavior, and be notified for encountered issues. 
 - In line with the Service-Level Agreement(SLA), monitoring the system's performance is easier with Prometheus and Grafana, wherein metrics are customized and alerts are set based on our needs.
+- The combination of Prometheus' powerful metrics and Grafana's data visualization is relevant for next year's students as they will play the role of operators for somebody else's system.
 
 #2 M
 -	Some time the system is interrupted and out of reach or loses some data, without developer know about it

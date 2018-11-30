@@ -11,14 +11,29 @@
 
 **Monitoring**
 
+#1 C
 - System's functionalities may be interrupted anytime without the developers/operators' awareness.
 - Users would end up unsatisfied with system's performance or usability.
 - The combination of Prometheus' powerful metrics and Grafana's data visualization solve the problem.
 - In line with the Service-Level Agreement(SLA), monitoring the system's performance is easier with Prometheus and Grafana, wherein metrics are customized and alerts are set based on our needs.
 
+#2 M
+-	Some time the system is interrupted and out of reach or loses some data, without developer know about it
+-	Google and the search provider sites do not like websites that are not of high quality. These web site that are discontinued or lose information will lose their customers
+-	Server monitoring system, whenever an error occurs on one of your server services or your server is interrupted and out of reach, and ultimately affects hackers, You will be notified.
+-	monitoring the system's performance with Prometheus and Grafana
+
+#3 A
+- _state the problem_ <br>
+- _say why it is interesting_ <br>
+- _say what your solution achieves_ <br>
+- _say what follows from your solution_ <br>
+
+#### Other Topics:
+
 **Logging with logstash**
 
-- Any software application will have a probablity of system breakdown or unexpected behaviour. 
+- Any software application will have a probablity of system breakdown or unexpected behaviour.
 - You can trace the errors by debugging the system manually, but the workload of debugging will follow with the size of system, and inevitiablity it will become an impossible task.
 - By implement a logging system, you can have all of the logs aggregated into one place so you can see the process flow and perform queries against the logs from all applications from one place.
 - We implemented the ELK stack, whichas logstash is a part of. The logstash provides us a excellent and centralized option to trace the error or unexpected behaviour.

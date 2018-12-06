@@ -33,16 +33,38 @@ Choose the cheapest and ubuntu
 
 ### 1.4 Install prompetheus and node_exporter on your digital ocean droplet
 **Follow this guide:**
+
 https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04
-*Notice it might take litle time(15 minuttes) to setup everything up*
+*Notice it might take litle time(15 minuttes) to setup everything up, and dont forget to complete the prerequestions*
 
 ## 2. Setup Grafana
 
-### 2.1 Create Grafana dashboard
-### 2.2 Databinding with prompetheus
-### 2.3 Visualize compontents
-### 2.4 Setup alert system
-## 3. Lets stress/crash the system!
-### 3.1 Run the system-crash script
-### 4. Expectation
+### 2.1 Create Grafana Cloud account
+- Visit https://grafana.com/get
+- Chose hosted cloud grafana
+- Create your account
 
+
+### 2.2 Databinding with prompetheus (Datasource)
+Enter your grafana dashboard using your cloud account www.youraccount.grafana.net
+Do following:
+*Configuration -> Datasources -> Add data source -> Prompetheus*
+Fill with following info
+- Url: `YourDigitalOceanIp:9090`
+
+Click **Save and Test**
+### 2.3 Import dashboarh
+- Click plus icon(Create) and choose import 2705
+https://grafana.com/dashboards/2705
+- profit
+### 2.4 Setup alert system
+- pls
+- its easy
+## 3. Install linux stress
+- Go your digital ocean terminal
+- Run `$ sudo apt install stress`
+
+### 3.1 Run the system-crash script
+- Run ´
+
+### 4. Conclusion

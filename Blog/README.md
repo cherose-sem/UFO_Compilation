@@ -38,29 +38,75 @@ The effect of system crash might go unnoticed, and the cost will follow with the
 ### _Evidence: Interviews/Analysis_
 > _Cherry_
 
-#### System Performance Monitoring Experience with Prometheus and Grafana
-[EXPANDED FROM ABSTRACT]<br>
-System Performance Monitoring(SPM) can be done by using tools such as Prometheus and Grafana. The Service-Level Agreement(SLA) was made between our group—developers, and the operators. The Hackernews project should comply to the agreement. It includes the uptime of 95%, data loss of 20%, and landing page load time of maximum 3 seconds. Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization in purpose of analytics and monitoring. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. Therefore, the combination of Prometheus and Grafana made it possible for us to monitor the system based on our needs.
-
-[will add more here...]
-
 #### Survey Questionnaire
 
 We conducted a survey in relation to the subject. We chose to formulate qualitative questions to broaden our knowledge about SPM based on the responders experience. See the questionnaire [here](https://goo.gl/forms/Iq13rorAlEzi05Lr2).
 
 Our main target responders are IT professionals who have experience in SPM regardless of what tools they are using. They are Software Developer and Lead Architect from CSIS Security group, an IT consultant in NetCompany and a Software Engineer Intern — who is also a former student on the same course. Their responses helped to enlighten our target group — next year's students on the same course — on how important SPM is.  
 
-[will discuss interesting questions and answers here...]
+As a result, we found some interesting points — how they think SPM is important, when is the best time it has to be integrated with the system, shared experience with preventing or tracing performance issue, and other similar SPM tools as Prometheus and Grafana. It was given that not all companies support the idea of integrating their system with SPM tools, though it also shows that as a developer/operator — believe that SPM is useful and has to be implemented as early as possible in the software development cycle.
 
-See the complete responses [here](link to be fixed).
+<sup>_Are you using any System Performance Monitoring(SPM) tool in your current job? If yes, please explain which advantages the tool gives you as a DevOps/developer/operator._</sup>
+![SPM tools](https://user-images.githubusercontent.com/16150075/49582390-2e5a3400-f955-11e8-9228-c443e6bededb.png)
+
+<sup>_When do you think the developer should implement a SPM tool in a software developing cycle? Please explain your answer._</sup>
+![when to implement](https://user-images.githubusercontent.com/16150075/49582701-28188780-f956-11e8-91ee-76de933b5fe9.png)
+
+The two responders from CSIS Security Group shared their experience when they actually encountered a performance issue and how SPM tools has been so useful to resolve the issue.
+
+<sup>_Do you have any experience of preventing or trace performance issue using a SPM tool? If yes, please explain the experience and why/how the SPM tool have prevented or being a help to resolve the issue._</sup>
+![issue experience](https://user-images.githubusercontent.com/16150075/49582965-f8b64a80-f956-11e8-9c26-496160029d19.png)
+
+The main SPM tools that we covered for this blog are Prometheus for custom metrics and Grafana for data visualization. There are also some tools named in the survey that is equally relevant to the subject — Kibana for logs, InfluxDB for storing and analyzing time series data, and Icinga for system and network monitoring. Prometheus hasn't been so known by most of our responders.
+
+See the response summary [here](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Responses%20Summary.pdf).
+
+#### System Performance Monitoring Experience with Prometheus and Grafana
+[EXPANDED FROM ABSTRACT]<br>
+System Performance Monitoring(SPM) can be done by using tools such as Prometheus and Grafana. The Service-Level Agreement(SLA) was made between our group—developers, and the operators. The Hackernews project should comply to the agreement. It includes the uptime of 95%, data loss of 20%, and landing page load time of maximum 3 seconds. Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization in purpose of analytics and monitoring. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. Therefore, the combination of Prometheus and Grafana made it possible for us to monitor the system based on our needs.
+
+_Prometheus Custom Metrics_
+
+Prometheus also offers prometheus_client library wherein you can add custom metrics injected to your own system.
+
+```javascript
+const gauge = new Prometheus.Gauge({
+  name: 'load_time',
+  help: 'landing page loadtime',
+  labelNames: ['method','path', 'statusCode']
+});
+
+router.get(['/newest', '/newest/:max'], async function(req, res) {
+  const end = gauge.startTimer({ method: 'GET',  path: req.route.path });
+  let max = parseInt(req.params.max)
+  let result = await ctrl.getStories(max)
+  if (result.statusCode == 200) {
+    ...
+    end({ statusCode: '200' });
+  } else if (result.statusCode == 400) {
+    ...
+    end({ statusCode: '400' });
+  } else {
+    ...
+    end({ statusCode: '400' });
+  }
+})
+```
+
+<sub>The sample code was taken from our LSD Hackernews project. It simply starts a timer for computing the response load time of a certain HTTP request based on the response's statusCode. The `load_time` metric will be executed and can be queried later on using Prometheus interface or in a Grafana panel.</sub>
+
+[...to be continued...]
+
+#### Experimentation
+> _Andreas_
 
 
 ### Conclusion
-> _ACM_
+> _Andreas_
 
 
 ### Outlook Discussion
-> _Andreas_
+> _Cherry_
 
 [EXPANDED FROM ABSTRACT]<br>
  A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown.

@@ -19,21 +19,30 @@ The experiment will run a bashscript that will perform a stressful I/O operation
 ## 1. Setup a digital ocean droplet
 
 ### 1.1 Create an account 
-Sign yourself up 
+**Sign yourself up**
 https://cloud.digitalocean.com/registrations/new
 
 ### 1.2 Create and install the droplet
-Choose the cheapest and ubuntu //TODO FIX
+Choose the cheapest and ubuntu 
 
-### 1.3 Run the droplet
-### 1.4 Access the droplet
-### 1.5 Download the system-crash script
+### 1.3 Access the droplet
+- Reset the password
+- Check your email
+- Use the username and password provided in email
+- Login on "Lanuch console" with username and password
+
+### 1.4 Install prompetheus and node_exporter on your digital ocean droplet
+**Follow this guide:**
+https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04
+*Notice it might take litle time(15 minuttes) to setup everything up*
+
 ## 2. Setup Grafana
+
 ### 2.1 Create Grafana dashboard
 ### 2.2 Databinding with prompetheus
 ### 2.3 Visualize compontents
 ### 2.4 Setup alert system
-## 3. Lets crash the system!
+## 3. Lets stress/crash the system!
 ### 3.1 Run the system-crash script
 ### 4. Expectation
 

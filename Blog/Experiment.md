@@ -1,26 +1,37 @@
 # Monitoring a System Crash Experiment with Digital Ocean, Grafana, Prompethueus and bashscript
 ___
-Here i will setup a experiment that will provide you some of excellent examples of how a system monitoring can help you preventing system breakdowns, or at least give you some curicial informations on which part of system are having performance issues. There are some setup setups you have to conduct in order to get stuff's up and running.
+
+
+Here i will make an experiment that will give you some of excellent examples of how a **System Performance Monitoring(SPM)** can help you preventing system breakdowns, or at least give you some curicial informations on which part of the system have got a performance issues. There are some setup setups you have to conduct in order to get stuff's up and running.
+
+![](https://camo.githubusercontent.com/d010ea19c70677a0bfd8a64fc01d2b0948e1ffc1/687474703a2f2f646f63732e67726166616e612e6f72672f6173736574732f696d672f66656174757265732f64617368626f6172645f6578312e706e67)
+
+I WANT STAY!
+
+:(()
 
 ## Prerequisite for the experiment
 * Access to a computer
 * Access to internet
 * A IQ above 50 
+* 
+## Purpose of the experiment
+The experiment will give you a idea of why a **system performance monitoring(SPM)** can be useful for any software project. The experiment will also share you some nice tools for monitoring and a guide how to setup and use these tools.
 
 ## Explaination of the experiment
-The experiment will run a bashscript that will perform a stressful I/O operations on the system, that will eventually crash the system down. You will be using Grafana dashboard for visualize the performance of your system, and in our case we will visualize the performance of harddisk I/O, cpu usage percent, and uptime of the system. You will be aswell using the inbuilt alert system in Grafana, so you will be alerted when your system experiences some performance issues that excees any predescribed limit.
+The experiment will run a bashscript that will perform a stressful **hardware operations** on the system, that will eventually crash the system down. You will be using **Grafana dashboard** for visualize the performance of your system, and in our case we will visualize the performance of harddisk I/O, cpu usage percent, and uptime of the system. You will be aswell using the inbuilt **alert system** in Grafana to notify yourself when your system experiences some performance issues that excees any predescribed limit.
 
-**Tools for the experiment:**
-* A Digital Ocean droplet 
-* Prompetheus 
-* Grafana dashboard
-* Bashscript
+**Tools/equipments for the experiment:**
+* A Digital Ocean droplet
+* `Prompetheus` and `node_exporter`
+* `Grafana dashboard`
 
 ## 1. Setup a digital ocean droplet
+*Guide how to get a Digital Ocean droplet* 
 
 ### 1.1 Create an account 
-**Sign yourself up**
-https://cloud.digitalocean.com/registrations/new
+Register your account here
+* https://cloud.digitalocean.com/registrations/new
 
 ### 1.2 Create and install the droplet
 Choose the cheapest and ubuntu 
@@ -68,3 +79,11 @@ https://grafana.com/dashboards/2705
 - Run ´
 
 ### 4. Conclusion
+
+???
+the structure design fucks me up it looks ugly af
+
+i need to prettyify it before i can countine
+
+
+

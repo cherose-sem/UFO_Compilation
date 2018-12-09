@@ -94,7 +94,7 @@ Now you should have installed `prompetheus` and `node_exporter` on your digital 
 ![](https://i.gyazo.com/fe94217957dbe60956fcfa4f716f3857.png)
 
 
-### 2.4 Setup alert system
+### 2.4 Setup the trigger alert system
 
 # The actual experiment 
 ## 3. Install linux stress

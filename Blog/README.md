@@ -1,5 +1,3 @@
-> # BLOG IN PROGRESS
-
 ## INVESTIGATION AND REPORTING (UFO) Blog Entry
 
 ### _Abstract:_
@@ -126,8 +124,8 @@ After adding the setup for logging with Kibana and logstash, the system kept on 
 
 
 ##### C. Experimentation
-> _Andreas_
 
+We also conducted an experiment that will define how SPM works — [Monitoring a System Crash Experiment with Digital Ocean, Grafana, Promethueus and Stress Test](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Experiment.md).
 
 ### IV. Conclusion
 

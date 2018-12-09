@@ -9,30 +9,42 @@ Here i will make an experiment that will give you some of excellent examples of 
 ## Prerequisite for the experiment
 * Access to a computer
 * Access to internet
-* A IQ above 50
-*
+* Basic understanding of software/programming/coding
+
+## Cost
+The experiment wont cost you anything, its completely **free**. Except of the expenses for the electricic usage and the bills you might be paying for gaining your fancy computer.
+
 ## Purpose of the experiment
-The experiment will give you a idea of why a **system performance monitoring(SPM)** can be useful for any software project. The experiment will also share you some nice tools for monitoring and a guide how to setup and use these tools.
+The experiment will give you a idea of why a **system performance monitoring(SPM)** can be useful for any software project. The experiment will also mention some nice tools for monitoring and a guide how to setup and use these tools.
 
 ## Explaination of the experiment
-The experiment will run a bashscript that will perform a stressful **hardware operations** on the system, that will eventually crash the system down. You will be using **Grafana dashboard** for visualize the performance of your system, and in our case we will visualize the performance of harddisk I/O, cpu usage percent, and uptime of the system. You will be aswell using the inbuilt **alert system** in Grafana to notify yourself when your system experiences some performance issues that excees any predescribed limit.
+The experiment will perform a stressful **hardware operations** on the system, that will eventually crash the system down. You will be using **Grafana dashboard** for visualize the performance of your system, and in our case we will visualize the performance of harddisk I/O, cpu usage percent, and uptime of the system. You will be aswell using the inbuilt **alert system** in Grafana to notify yourself when your system experiences some performance issues that excees any predescribed limit.
 
-**Tools/equipments for the experiment:**
-* A Digital Ocean droplet
-* `Prompetheus` and `node_exporter`
-* `Grafana dashboard`
+#### Tools/equipments/services for the experiment:
+* **Cloud server container service**:  
+  * `Digital Ocean droplet`
+* **System Performance Monitoring(SPM) tools**: 
+  * `Prompetheus` and `node_exporter`
+* **Performance visualization**: 
+  * `Grafana dashboard`
 
 ## 1. Setup a digital ocean droplet
-*Guide how to get a Digital Ocean droplet*
 
-### 1.1 Create an account
-Register your account here
-* https://cloud.digitalocean.com/registrations/new
+### 1.1 Create an account 
+Let’s first get started by creating an DO(Digital Ocean) account. Of course you can skip this if you already have one. Head over to https://cloud.digitalocean.com/registrations/new and click the sign up and follow the steps to create your account.
 
 ### 1.2 Create and install the droplet
-Choose the cheapest and ubuntu
+Click the green "Create" button, and choose "Droplet"
+![](https://i.gyazo.com/0afe05f2000ffc93007ac62fa27e2db8.png)
 
+Choose **Ubuntu** and the **cheapeste size**. (*Dont worry you wont be charged, since size of the demo will be minor, and wont cost you anything*). Choose the server **location** to be nearest possible to your current location. 
+![](https://i.gyazo.com/851bae785a8062b9788c056dc8c0f399.png)
+
+Give your server **a name**, something like "demoserver", and finalize the creation of your droplet.
+
+![](https://i.gyazo.com/c84ee66589842dc18438d367d0e34c2f.png)
 ### 1.3 Access the droplet
+
 - Reset the password
 - Check your email
 - Use the username and password provided in email
@@ -75,3 +87,4 @@ https://grafana.com/dashboards/2705
 - Run ´
 
 ### 4. Conclusion
+

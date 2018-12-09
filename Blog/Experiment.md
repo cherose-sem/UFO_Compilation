@@ -93,6 +93,8 @@ Now you should have installed `prompetheus` and `node_exporter` on your digital 
   - You should see a overview with lot of panels and meterics something like that
 ![](https://i.gyazo.com/fe94217957dbe60956fcfa4f716f3857.png)
 
+### 2.3 Grafana explaination
+
 
 ### 2.4 Setup the trigger alert system
 

@@ -94,7 +94,31 @@ router.get(['/newest', '/newest/:max'], async function(req, res) {
 
 <sub>The sample code was taken from our LSD Hackernews project. It simply starts a timer for computing the response load time of a certain HTTP request based on the response's statusCode. The `load_time` metric will be executed and can be queried later on using Prometheus interface or in a Grafana panel.</sub>
 
+_Grafana Hackernews Dashboard_
 
+In connection with Prometheus, we created a dashboard for the project. It simply shows the Hackernews System's behaviour over time as it refreshes every 10s.
+
+![image](https://user-images.githubusercontent.com/16150075/49698683-5e107280-fbc7-11e8-8a90-df7a846e4c7e.png)
+
+![image](https://user-images.githubusercontent.com/16150075/49698689-6b2d6180-fbc7-11e8-8d5c-3748e10270f5.png)
+
+##### Performance Issue Tracking Experience — our system hits the ground badly
+
+November 14, 2018 — we encountered a system breakdown. We were notified that our Hackernews system was either so slow in loading the summary page or just crashed totally after request. We started investigating the problem and came up with bunch of possible cause of the problem.
+
+TIME | Possible Reason | Description | Notes
+--- | --- | ---
+14:52 | sorting algorithm for nested stories/comments | the difficulty of retrieving the data and format as nested objects | no basis — solution: indexing and use `_id`
+16:27 | many requests from the simulator | Helge started making requests to the frontend | no basis / guess
+16:38 | Elk - logging setup | the last commit/changes added | the monitoring dashboard, the system downtime and lost post requests reported
+
+Due to so many request from the simulator and the demand of adding new services to the project, the system crashed! Fortunately, we just added the SPM tools to the project that helped us tracking the problem. The time where it has started its crazy behavior made us realized the possible changes that caused the issue.
+
+![down issue](https://user-images.githubusercontent.com/16150075/49698755-65844b80-fbc8-11e8-9924-9f9ed20a6827.png)
+
+The issue has been resolved around midnight, though we still have had to upgrade the server.
+
+..................... more stuff to write CHERRY :P
 
 #### Experimentation
 > _Andreas_

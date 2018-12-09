@@ -22,22 +22,25 @@
 
 ***
 
-### _The Problem: As blind as a bat, occurrence of system crash and performance issue_
+### _I. The Problem: As blind as a bat, occurrence of system crash and performance issue_
 
 Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or encountered performance issue without the developers/operators awareness.
 
-[to be fixed..this section] <br>
-Application might experience occurrence of system crash due to performance issue, for example whatever reason, the website has been hacked or attacked, and the website pages have been swapped by hacking, when the server is downtime Whenever there is a problem with the server or website, it will take time for developers to notice the problem of the website or server, and this notification will be delayed too much. The server has many users who suffer greatly from the unavailability of the website and the termination of the server or website is damaging to their credibility, this causes users to be disturbed, that's way the availability of the site for users is important.
+Application might experience occurrence of system crash due to performance issue. If a website is not working well or it does so very slowly and there are some problems For example, server overload which means user post a lot of request, or there is not an insufficient RAM, servers are machines and sometimes fans bust or maybe coding error reason for syntax error. There are some reason at program errors, Whatever reason developer must know what these errors are and how to handle them, small issues might evolve into anything major.
 
-### _Problem Statement: Bats crash more often, and likewise your system_
+Whenever there is a problem with the server or website, it will take time for developers to notice the problem of the website or server. It will probably take hours before we realize the problem (probably due to a user’s complaint).
+
+The server might have many users who suffer greatly from the unavailability of the website and maybe the termination of the server or website is damaging to their credibility, which would be bad publicity that can further damage our business. The website could risk losing its placement in Google search results, and it might impact their business by losing their currently and potentially customers. That's why we have to minimize the time our page is down or running slowly.
+
+### _II. Problem Statement: Bats crash more often, and likewise your system_
 
 The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload for tracing the reason to system crash will be a heavy work. In worst cases, the users are the first ones who will experience it and will cause a huge impact to the business. Integrating the system with System Performance Monitoring tools is worth for consideration as early in the development process.
 
 On the other hand, some developers may also think that it is not necessary when it comes to applications with short lifespan. It is the product owner's decision if they are willing to invest on the time spent for adding up monitoring into the system, but at least way important to raise the concern about it. There is no perfect system that will never be interrupted or break over time. The cost and risk should always be on top discussion for decision-making in every project management.
 
-### _Proof of Concept_
+### _III. Proof of Concept_
 
-#### Survey Questionnaire
+#### A. Survey Questionnaire
 
 We conducted a survey in relation to the subject. We chose to formulate qualitative questions to broaden our knowledge about System Performance Monitoring(SPM) based on the responders experience. See the questionnaire [here](https://goo.gl/forms/Iq13rorAlEzi05Lr2).
 
@@ -60,7 +63,7 @@ The main SPM tools that we covered for this blog are Prometheus for custom metri
 
 See the response summary [here](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Responses%20Summary.pdf).
 
-#### System Performance Monitoring Experience with Prometheus and Grafana
+#### B. System Performance Monitoring Experience with Prometheus and Grafana
 
 System Performance Monitoring(SPM) can be done by using tools such as Prometheus and Grafana. The Service-Level Agreement(SLA) was made between our group—developers, and the operators. The Hackernews project for Large Systems Development(LSD) should comply to the agreement. It includes the uptime of 95%, data loss of 20%, and landing page load time of maximum 3 seconds. Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization in purpose of analytics and monitoring. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. Therefore, the combination of Prometheus and Grafana made it possible for us to monitor the system based on our needs.
 
@@ -102,37 +105,34 @@ In connection with Prometheus, we created a dashboard for the project. It simply
 
 ![image](https://user-images.githubusercontent.com/16150075/49698689-6b2d6180-fbc7-11e8-8d5c-3748e10270f5.png)
 
-##### Performance Issue Tracking Experience — our system hits the ground badly
+##### _System Performance Issue Tracking Experience — our system hits the ground badly_
 
 November 14, 2018 — we encountered a system breakdown. We were notified that our Hackernews system was either so slow in loading the summary page or just crashed totally after request. We started investigating the problem and came up with bunch of possible cause of the problem.
 
-TIME | Possible Reason | Description | Notes
---- | --- | ---
+TIME | Possible Reason | Description | Remarks
+--- | --- | --- | --- |
 14:52 | sorting algorithm for nested stories/comments | the difficulty of retrieving the data and format as nested objects | no basis — solution: indexing and use `_id`
-16:27 | many requests from the simulator | Helge started making requests to the frontend | no basis / guess
-16:38 | Elk - logging setup | the last commit/changes added | the monitoring dashboard, the system downtime and lost post requests reported
+16:27 | many requests from the simulator | Helge started making requests to the frontend | no basis — we asked Helge to pause the requests to the landing page for the meantime
+16:38 | Elk - logging setup | the last commit/changes added | the monitoring dashboard — the system downtime and lost post requests reported around 13:00
 
 
-Due to so many request from the simulator and the demand of adding new services to the project, the system crashed! Fortunately, we just added the SPM tools to the project that helped us tracking the problem. The time where it has started its crazy behavior made us realized the possible changes that caused the issue.
+After adding the setup for logging with Kibana and logstash, the system kept on crashing. Due to so many request from the simulator and the demand of adding new services to the project, our server encountered out of memory issue. As we are tracking the problem, we had to stop processes and observe its behavior. The system went back to its working state, right before we add the Kibana again. Therefore, upgrading the server fixed the issue.
 
 ![down issue](https://user-images.githubusercontent.com/16150075/49698755-65844b80-fbc8-11e8-9924-9f9ed20a6827.png)
 
-The issue has been resolved around midnight, though we still have had to upgrade the server.
+<sub>The image shows the crazy behavior of our Hackernews system. The Grafana dashboard shows when the system was struggling and have been down several times, the posts requests from the simulator started failing and lost posts grows enormously, and the so slow loading time to the landing page.</sub>
 
-..................... more stuff to write :P
 
-#### Experimentation
+#### C. Experimentation
 > _Andreas_
 
 
-### Conclusion
+### _IV. Conclusion_
 > _Andreas_
 
 
-### Outlook Discussion
-> _Cherry_
+### _V. Outlook Discussion_
 
-[EXPANDED FROM ABSTRACT]<br>
  A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown.
 
 

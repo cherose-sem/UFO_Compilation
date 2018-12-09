@@ -6,10 +6,6 @@ Here i will make an experiment that will give you some of excellent examples of 
 
 ![](https://camo.githubusercontent.com/d010ea19c70677a0bfd8a64fc01d2b0948e1ffc1/687474703a2f2f646f63732e67726166616e612e6f72672f6173736574732f696d672f66656174757265732f64617368626f6172645f6578312e706e67)
 
-I WANT STAY!
-
-:(()
-
 ## Prerequisite for the experiment
 * Access to a computer
 * Access to internet
@@ -79,11 +75,4 @@ https://grafana.com/dashboards/2705
 - Run ´
 
 ### 4. Conclusion
-
-???
-the structure design fucks me up it looks ugly af
-
-i need to prettyify it before i can countine
-
-
 

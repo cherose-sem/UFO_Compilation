@@ -29,6 +29,13 @@ Bats aren't blind but their vision is so bad. This reflects to the problem that 
 [to be fixed..this section] <br>
 Application might experience occurrence of system crash due to performance issue, for example whatever reason, the website has been hacked or attacked, and the website pages have been swapped by hacking, when the server is downtime Whenever there is a problem with the server or website, it will take time for developers to notice the problem of the website or server, and this notification will be delayed too much. The server has many users who suffer greatly from the unavailability of the website and the termination of the server or website is damaging to their credibility, this causes users to be disturbed, that's way the availability of the site for users is important.
 
+----- 
+Application might experience occurrence of system crash due to performance issue. If a website is not working well or it does so very slowly and there are some problems For. eks. Server overload which means user post a lot of request, or there is not an insufficient RAM,  ervers are machines and sometimes fans bust or maybe coding error reason for syntax error.
+There are some reason at program errors, Whatever reason developer must know what these errors are and how to handle them, small issues might evolve into anything major.
+ Whenever there is a problem with the server or website, it will take time for developers to notice the problem of the website or server. It will probably take hours before we realize the problem (probably due to a user’s complaint). We have to minimize the time our page is down or running slowly.
+The server might have many users who suffer greatly from the unavailability of the website and maybe the termination of the server or website is damaging to their credibility, which would be bad publicity that can further damage our business. The website could risk losing its placement in google search results, and it might impact their business by losing their currently and potentially customers.
+
+
 ### _Problem Statement: Bats crash more often, and likewise your system_
 
 The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload for tracing the reason to system crash will be a heavy work. In worst cases, the users are the first ones who will experience it and will cause a huge impact to the business. Integrating the system with System Performance Monitoring tools is worth for consideration as early in the development process.

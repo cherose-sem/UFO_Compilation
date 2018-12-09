@@ -1,8 +1,7 @@
-# Monitoring a System Crash Experiment with Digital Ocean, Grafana, Prompethueus and bashscript
+# Monitoring a System Crash Experiment with Digital Ocean, Grafana, Prompethueus and stress test
 ___
 
-
-Here i will make an experiment that will give you some of excellent examples of how a **System Performance Monitoring(SPM)** can help you preventing system breakdowns, or at least give you some curicial informations on which part of the system have got a performance issues. There are some setup setups you have to conduct in order to get stuff's up and running.
+Here i will make an experiment that will give you some of examples of how a **System Performance Monitoring(SPM)** can help you preventing system breakdowns, or at least give you some curicial informations on which part of the system have got a performance issues. There are some setup setups you have to conduct in order to get stuff's up and running.
 
 ![](https://camo.githubusercontent.com/d010ea19c70677a0bfd8a64fc01d2b0948e1ffc1/687474703a2f2f646f63732e67726166616e612e6f72672f6173736574732f696d672f66656174757265732f64617368626f6172645f6578312e706e67)
 
@@ -28,6 +27,7 @@ The experiment will perform a stressful **hardware operations** on the system, t
 * **Performance visualization**: 
   * `Grafana dashboard`
 
+# Setup the experiment
 ## 1. Setup a digital ocean droplet
 
 ### 1.1 Create an account 
@@ -96,6 +96,7 @@ Now you should have installed `prompetheus` and `node_exporter` on your digital 
 
 ### 2.4 Setup alert system
 
+# The actual experiment 
 ## 3. Install linux stress
 - Go your digital ocean terminal
 - Run `$ sudo apt install stress`

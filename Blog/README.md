@@ -27,14 +27,14 @@
 
 Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or encountered performance issue without the developers/operators awareness.
 
-Application might experience occurrence of system crash due to performance issue. If a website is not working well or it does so very slowly and there are some problems For example, server overload which means user post a lot of request, or there is not an insufficient RAM, servers are machines and sometimes fans bust or maybe coding error reason for syntax error. There are some reason at program errors, Whatever reason developer must know what these errors are and how to handle them, small issues might evolve into anything major.
+If a website is not working well or it does so very slowly and there are some problems For example, server overload which means user post a lot of request, or there is not an insufficient RAM, servers are machines and sometimes fans bust or maybe coding error reason for syntax error. There are some reason at program errors, Whatever reason developer must know what these errors are and how to handle them, small issues might evolve into anything major.
 
 Whenever there is a problem with the server or website, it will take time for developers to notice the problem of the website or server. It will probably take hours before we realize the problem (probably due to a user’s complaint).
 
 The server might have many users who suffer greatly from the unavailability of the website and maybe the termination of the server or website is damaging to their credibility, which would be bad publicity that can further damage our business. The website could risk losing its placement in Google search results, and it might impact their business by losing their currently and potentially customers. That's why we have to minimize the time our page is down or running slowly.
 
 ### II. Problem Statement
-###### _Bats crash more often, and likewise your system_
+###### _Bats crash more often — likewise your system_
 
 The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload for tracing the reason to system crash will be a heavy work. In worst cases, the users are the first ones who will experience it and will cause a huge impact to the business. Integrating the system with System Performance Monitoring tools is worth for consideration as early in the development process.
 
@@ -122,7 +122,7 @@ After adding the setup for logging with Kibana and logstash, the system kept on 
 
 ![down issue](https://user-images.githubusercontent.com/16150075/49698755-65844b80-fbc8-11e8-9924-9f9ed20a6827.png)
 
-<sub>The image shows the crazy behavior of our Hackernews system. The Grafana dashboard shows when the system was struggling and have been down several times, the posts requests from the simulator started failing and lost posts grows enormously, and the so slow loading time to the landing page.</sub>
+<sub>The image shows the crazy behavior of our Hackernews system. The Grafana dashboard shows when the system was struggling and have been down several times, the posts requests from the simulator started failing and became flat while lost posts grows enormously, and the so slow loading time to the landing page.</sub>
 
 
 ##### C. Experimentation
@@ -130,12 +130,15 @@ After adding the setup for logging with Kibana and logstash, the system kept on 
 
 
 ### IV. Conclusion
-> _Andreas_
+
+There are no exceptions on unexpected system failure. We could always plan for flawless perfect system, but the assurance that nothing will go wrong over time is very naive. And the consequences of having the customers/users deal with a failing system from time to time is a big no, no for the business! There are SPM tools which can provide the awareness for the developers/operators about the system's performance. It can be costly effective to spice up the system with SPM tools rather than even more expensive resolving performance issues and lost customers due to product's dissatisfaction.
 
 
 ### V. Outlook Discussion
 
- A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown.
+ A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown. Given that SPM is important and all the IT professionals in the field thinks that it should be done as early as possible in the development cycle, it still gives us an open question of — can it be added later in the process, at least right before production?
+
+ One responder — former student at the same course — thinks that it should be done later in the process, and the same as when we did it during this semester period.
 
 
 ***

@@ -22,39 +22,38 @@
 
 ***
 
-### _The Problem_
-> _Mahnaz_
+### _The Problem: As blind as a bat, occurrence of system crash and performance issue_
 
-[EXPANDED FROM ABSTRACT]<br>
+Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or encountered performance issue without the developers/operators awareness.
+
+[to be fixed..this section] <br>
 Application might experience occurrence of system crash due to performance issue, for example whatever reason, the website has been hacked or attacked, and the website pages have been swapped by hacking, when the server is downtime Whenever there is a problem with the server or website, it will take time for developers to notice the problem of the website or server, and this notification will be delayed too much. The server has many users who suffer greatly from the unavailability of the website and the termination of the server or website is damaging to their credibility, this causes users to be disturbed, that's way the availability of the site for users is important.
 
-### _Problem Statement_
-> _Andreas_
+### _Problem Statement: Bats crash more often, and likewise your system_
 
-[EXPANDED FROM ABSTRACT]<br>
-The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload for tracing the reason to system crash will be a heavy work.
+The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload for tracing the reason to system crash will be a heavy work. In worst cases, the users are the first ones who will experience it and will cause a huge impact to the business. Integrating the system with System Performance Monitoring tools is worth for consideration as early in the development process.
 
+On the other hand, some developers may also think that it is not necessary when it comes to applications with short lifespan. It is the product owner's decision if they are willing to invest on the time spent for adding up monitoring into the system, but at least way important to raise the concern about it. There is no perfect system that will never be interrupted or break over time. The cost and risk should always be on top discussion for decision-making in every project management.
 
-### _Evidence: Interviews/Analysis_
-> _Cherry_
+### _Proof of Concept_
 
 #### Survey Questionnaire
 
-We conducted a survey in relation to the subject. We chose to formulate qualitative questions to broaden our knowledge about SPM based on the responders experience. See the questionnaire [here](https://goo.gl/forms/Iq13rorAlEzi05Lr2).
+We conducted a survey in relation to the subject. We chose to formulate qualitative questions to broaden our knowledge about System Performance Monitoring(SPM) based on the responders experience. See the questionnaire [here](https://goo.gl/forms/Iq13rorAlEzi05Lr2).
 
-Our main target responders are IT professionals who have experience in SPM regardless of what tools they are using. They are Software Developer and Lead Architect from CSIS Security group, an IT consultant in NetCompany and a Software Engineer Intern — who is also a former student on the same course. Their responses helped to enlighten our target group — next year's students on the same course — on how important SPM is.  
+Our main target responders are IT professionals who have experience in SPM regardless of what tools they are using. They are Software Developer and Lead Architect from CSIS Security group, an IT consultant in NetCompany and a Software Engineer Intern — who is also a former student on the same course. Their responses will help to enlighten our target group — next year's students on the same course — on how important SPM is.  
 
-As a result, we found some interesting points — how they think SPM is important, when is the best time it has to be integrated with the system, shared experience with preventing or tracing performance issue, and other similar SPM tools as Prometheus and Grafana. It was given that not all companies support the idea of integrating their system with SPM tools, though it also shows that as a developer/operator — believe that SPM is useful and has to be implemented as early as possible in the software development cycle.
+As a result, we found some interesting points — how they think SPM is important, when is the best time it has to be integrated with the system, shared experience with preventing or tracing performance issue, and other similar SPM tools as Prometheus and Grafana. It was given that not all companies support the idea of adding SPM tools to their system, though it also shows that as a developer/operator — believe that SPM is useful and has to be implemented as early as possible in the software development cycle.
 
-<sup>_Are you using any System Performance Monitoring(SPM) tool in your current job? If yes, please explain which advantages the tool gives you as a DevOps/developer/operator._</sup>
+<sup>_Are you using any System Performance Monitoring(SPM) tool in your current job? If yes, please explain which advantages the tool gives you as a DevOps/developer/operator._</sup><br>
 ![SPM tools](https://user-images.githubusercontent.com/16150075/49582390-2e5a3400-f955-11e8-9228-c443e6bededb.png)
 
-<sup>_When do you think the developer should implement a SPM tool in a software developing cycle? Please explain your answer._</sup>
+<sup>_When do you think the developer should implement a SPM tool in a software developing cycle? Please explain your answer._</sup><br>
 ![when to implement](https://user-images.githubusercontent.com/16150075/49582701-28188780-f956-11e8-91ee-76de933b5fe9.png)
 
 The two responders from CSIS Security Group shared their experience when they actually encountered a performance issue and how SPM tools has been so useful to resolve the issue.
 
-<sup>_Do you have any experience of preventing or trace performance issue using a SPM tool? If yes, please explain the experience and why/how the SPM tool have prevented or being a help to resolve the issue._</sup>
+<sup>_Do you have any experience of preventing or trace performance issue using a SPM tool? If yes, please explain the experience and why/how the SPM tool have prevented or being a help to resolve the issue._</sup><br>
 ![issue experience](https://user-images.githubusercontent.com/16150075/49582965-f8b64a80-f956-11e8-9c26-496160029d19.png)
 
 The main SPM tools that we covered for this blog are Prometheus for custom metrics and Grafana for data visualization. There are also some tools named in the survey that is equally relevant to the subject — Kibana for logs, InfluxDB for storing and analyzing time series data, and Icinga for system and network monitoring. Prometheus hasn't been so known by most of our responders.
@@ -62,8 +61,8 @@ The main SPM tools that we covered for this blog are Prometheus for custom metri
 See the response summary [here](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Responses%20Summary.pdf).
 
 #### System Performance Monitoring Experience with Prometheus and Grafana
-[EXPANDED FROM ABSTRACT]<br>
-System Performance Monitoring(SPM) can be done by using tools such as Prometheus and Grafana. The Service-Level Agreement(SLA) was made between our group—developers, and the operators. The Hackernews project should comply to the agreement. It includes the uptime of 95%, data loss of 20%, and landing page load time of maximum 3 seconds. Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization in purpose of analytics and monitoring. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. Therefore, the combination of Prometheus and Grafana made it possible for us to monitor the system based on our needs.
+
+System Performance Monitoring(SPM) can be done by using tools such as Prometheus and Grafana. The Service-Level Agreement(SLA) was made between our group—developers, and the operators. The Hackernews project for Large Systems Development(LSD) should comply to the agreement. It includes the uptime of 95%, data loss of 20%, and landing page load time of maximum 3 seconds. Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization in purpose of analytics and monitoring. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. Therefore, the combination of Prometheus and Grafana made it possible for us to monitor the system based on our needs.
 
 _Prometheus Custom Metrics_
 
@@ -95,7 +94,7 @@ router.get(['/newest', '/newest/:max'], async function(req, res) {
 
 <sub>The sample code was taken from our LSD Hackernews project. It simply starts a timer for computing the response load time of a certain HTTP request based on the response's statusCode. The `load_time` metric will be executed and can be queried later on using Prometheus interface or in a Grafana panel.</sub>
 
-[...to be continued...]
+
 
 #### Experimentation
 > _Andreas_

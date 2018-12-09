@@ -22,7 +22,8 @@
 
 ***
 
-### _I. The Problem: As blind as a bat, occurrence of system crash and performance issue_
+### I. The Problem <br>
+##### _As blind as a bat — occurrence of system crash and performance issue_
 
 Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or encountered performance issue without the developers/operators awareness.
 
@@ -32,15 +33,16 @@ Whenever there is a problem with the server or website, it will take time for de
 
 The server might have many users who suffer greatly from the unavailability of the website and maybe the termination of the server or website is damaging to their credibility, which would be bad publicity that can further damage our business. The website could risk losing its placement in Google search results, and it might impact their business by losing their currently and potentially customers. That's why we have to minimize the time our page is down or running slowly.
 
-### _II. Problem Statement: Bats crash more often, and likewise your system_
+### II. Problem Statement
+###### _Bats crash more often, and likewise your system_
 
 The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload for tracing the reason to system crash will be a heavy work. In worst cases, the users are the first ones who will experience it and will cause a huge impact to the business. Integrating the system with System Performance Monitoring tools is worth for consideration as early in the development process.
 
 On the other hand, some developers may also think that it is not necessary when it comes to applications with short lifespan. It is the product owner's decision if they are willing to invest on the time spent for adding up monitoring into the system, but at least way important to raise the concern about it. There is no perfect system that will never be interrupted or break over time. The cost and risk should always be on top discussion for decision-making in every project management.
 
-### _III. Proof of Concept_
+### III. Proof of Concept
 
-#### A. Survey Questionnaire
+##### A. Survey Questionnaire
 
 We conducted a survey in relation to the subject. We chose to formulate qualitative questions to broaden our knowledge about System Performance Monitoring(SPM) based on the responders experience. See the questionnaire [here](https://goo.gl/forms/Iq13rorAlEzi05Lr2).
 
@@ -63,13 +65,13 @@ The main SPM tools that we covered for this blog are Prometheus for custom metri
 
 See the response summary [here](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Responses%20Summary.pdf).
 
-#### B. System Performance Monitoring Experience with Prometheus and Grafana
+##### B. System Performance Monitoring Experience with Prometheus and Grafana
 
 System Performance Monitoring(SPM) can be done by using tools such as Prometheus and Grafana. The Service-Level Agreement(SLA) was made between our group—developers, and the operators. The Hackernews project for Large Systems Development(LSD) should comply to the agreement. It includes the uptime of 95%, data loss of 20%, and landing page load time of maximum 3 seconds. Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization in purpose of analytics and monitoring. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. Therefore, the combination of Prometheus and Grafana made it possible for us to monitor the system based on our needs.
 
-_Prometheus Custom Metrics_
+**_Prometheus Custom Metrics_**
 
-Prometheus also offers prometheus_client library wherein you can add custom metrics injected to your own system.
+Prometheus offers prometheus_client library wherein you can add custom metrics injected to your own system.
 
 ```javascript
 const gauge = new Prometheus.Gauge({
@@ -97,7 +99,7 @@ router.get(['/newest', '/newest/:max'], async function(req, res) {
 
 <sub>The sample code was taken from our LSD Hackernews project. It simply starts a timer for computing the response load time of a certain HTTP request based on the response's statusCode. The `load_time` metric will be executed and can be queried later on using Prometheus interface or in a Grafana panel.</sub>
 
-_Grafana Hackernews Dashboard_
+**_Grafana Hackernews Dashboard_**
 
 In connection with Prometheus, we created a dashboard for the project. It simply shows the Hackernews System's behaviour over time as it refreshes every 10s.
 
@@ -123,15 +125,15 @@ After adding the setup for logging with Kibana and logstash, the system kept on 
 <sub>The image shows the crazy behavior of our Hackernews system. The Grafana dashboard shows when the system was struggling and have been down several times, the posts requests from the simulator started failing and lost posts grows enormously, and the so slow loading time to the landing page.</sub>
 
 
-#### C. Experimentation
+##### C. Experimentation
 > _Andreas_
 
 
-### _IV. Conclusion_
+### IV. Conclusion
 > _Andreas_
 
 
-### _V. Outlook Discussion_
+### V. Outlook Discussion
 
  A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown.
 

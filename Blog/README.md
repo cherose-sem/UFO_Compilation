@@ -45,15 +45,15 @@ Our main target responders are IT professionals who have experience in SPM regar
 
 As a result, we found some interesting points — how they think SPM is important, when is the best time it has to be integrated with the system, shared experience with preventing or tracing performance issue, and other similar SPM tools as Prometheus and Grafana. It was given that not all companies support the idea of adding SPM tools to their system, though it also shows that as a developer/operator — believe that SPM is useful and has to be implemented as early as possible in the software development cycle.
 
-<sup>_Are you using any System Performance Monitoring(SPM) tool in your current job? If yes, please explain which advantages the tool gives you as a DevOps/developer/operator._</sup><br>
-![SPM tools](https://user-images.githubusercontent.com/16150075/49582390-2e5a3400-f955-11e8-9228-c443e6bededb.png)
+<sup>_QUESTION: Are you using any System Performance Monitoring(SPM) tool in your current job? If yes, please explain which advantages the tool gives you as a DevOps/developer/operator._</sup><br>
+![SPM tools](https://user-images.githubusercontent.com/16150075/49582390-2e5a3400-f955-11e8-9228-c443e6bededb.png)<br>
 
-<sup>_When do you think the developer should implement a SPM tool in a software developing cycle? Please explain your answer._</sup><br>
+<sup>_QUESTION: When do you think the developer should implement a SPM tool in a software developing cycle? Please explain your answer._</sup><br>
 ![when to implement](https://user-images.githubusercontent.com/16150075/49582701-28188780-f956-11e8-91ee-76de933b5fe9.png)
 
 The two responders from CSIS Security Group shared their experience when they actually encountered a performance issue and how SPM tools has been so useful to resolve the issue.
 
-<sup>_Do you have any experience of preventing or trace performance issue using a SPM tool? If yes, please explain the experience and why/how the SPM tool have prevented or being a help to resolve the issue._</sup><br>
+<sup>_QUESTION: Do you have any experience of preventing or trace performance issue using a SPM tool? If yes, please explain the experience and why/how the SPM tool have prevented or being a help to resolve the issue._</sup><br>
 ![issue experience](https://user-images.githubusercontent.com/16150075/49582965-f8b64a80-f956-11e8-9c26-496160029d19.png)
 
 The main SPM tools that we covered for this blog are Prometheus for custom metrics and Grafana for data visualization. There are also some tools named in the survey that is equally relevant to the subject — Kibana for logs, InfluxDB for storing and analyzing time series data, and Icinga for system and network monitoring. Prometheus hasn't been so known by most of our responders.

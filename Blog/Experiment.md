@@ -56,7 +56,7 @@ You now have finalized the creation of your droplet. and you shall
 
 ### 1.4 Install prompetheus and node_exporter on your digital ocean droplet
 
-  - Follow and complete this **installation guide**:
+  - Follow and complete this **installation guide**, but just skip step 8 *"Step 8 — Securing Prometheus"* for now, we dont need adding security for this demo  :
 https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04
 *Notice it might take time(15 minuttes) to setup everything up, and dont forget to complete the prerequestions*
 
@@ -72,25 +72,36 @@ Now you should have installed `prompetheus` and `node_exporter` on your digital 
 ### 2.2 Databinding with prompetheus (Datasource)
 
 - Databinding with prompetheus
-  - Enter your grafana dashboard using your cloud account www.youraccount.grafana.net
-  - Configuration -> Datasources -> Add data source -> Prompetheus
-Fill with following info
-- Url: `YourDigitalOceanIp:9090`
+  - View your grafana dashboard using your cloud account www.youraccount.grafana.net
+  - Goto **datasources** from your grafanadashboard **Configuration -> Datasources**
+ ![](https://i.gyazo.com/890d62414916a0c2b8461a806e7ea3aa.png)
+  - Click **"add data source"**
+    - Choose **Prompetheus**
+  - Fill with following info and let everything else be default 
+    - Url: `YourDigitalOceanIp:9090` *You can find your ip in server info on Digital Ocean dashboard* 
+    ![](https://i.gyazo.com/ac5f98369dfcbdae4ad85138dbdb34aa.png)
+  - Click **"Save & Test"**
 
-Click **Save and Test**
 ### 2.3 Import dashboarh
-- Click plus icon(Create) and choose import 2705
-https://grafana.com/dashboards/2705
-- profit
+- Import a dashboard
+  - Clock Create (Plus Icon) and choose Import
+![](https://i.gyazo.com/d6947d5a3cd2b1fc17ad0ba8c3123e1f.png)
+  - Put the number:  `2705` on first field "Grafana.com Dashboard" 
+    - This is a custom made dashboard, that you have to just import then all visualzations will shows up in your dashboard *https://grafana.com/dashboards/2705*. For future reference you should rather learn how to use node_exporter to show the meterics, but for now i will just introducture you the tools. 
+- Show the dashboard by clicking "Dashboards" icon and click "Home".
+  - Choose the dashboard called "node-exporter-fangdd-com"
+  - You should see a overview with lot of panels and meterics something like that
+![](https://i.gyazo.com/fe94217957dbe60956fcfa4f716f3857.png)
+
+
 ### 2.4 Setup alert system
-- pls
-- its easy
+
 ## 3. Install linux stress
 - Go your digital ocean terminal
 - Run `$ sudo apt install stress`
 
-### 3.1 Run the system-crash script
-- Run ´
-
 ### 4. Conclusion
+
+## 5. References & Learn more
+
 

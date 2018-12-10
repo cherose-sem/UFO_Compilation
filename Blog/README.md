@@ -20,22 +20,22 @@
 
 ***
 
-### I. _If you are blind as a bat — how are you supposed to get awareness of any occurrence of system crash and performance issue?_
+### I. _If you are blind as a bat — how are you supposed to be aware of any occurrence of system crash and performance issue?_
+aware of any occurrence of
+Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or any performance issue without the developers/operators awareness. When the application is not working intended, the reasons can be varied like from server overload, enormous number of requests, insufficient RAM, or out-dated libraries/packages. Regardless to whatever reason it could be, small issues may lead to bigger problems.
 
-Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or encountered performance issue without the developers/operators awareness.
+Whenever the functioning system has been interrupted with such issues and become unavailable, the business will suffer. The business' credibility might be at risk — losing their current and potential clients. The longer the issues are hiding behind the curtains, the higher the cost will reflect into the business. 
 
-If the application is not working as intended to be, it can be varied from various reasons. For example, server overload — users enormous number of requests, insufficient RAM, or out-dated libraries/packages. Regardless to whatever reason it could be, small issues may lead to bigger problems.
-
-Whenever the functioning system has been interrupted with such issues and become unavailable, the business will also suffer. The business' credibility might be at risk — losing their current and potential clients. The longer the issues are hiding behind the curtains — unknown, the higher the risk it could reflect into the business. 
-
-### II.  _Bats crash more often — likewise your system_
+### II.  _Bats uses echolocation technique to avoid crashing into objects — like you should with your system_
 ######
 
-The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload for tracing the reason to system crash will be a heavy work. In worst cases, the users are the first ones who will experience it and will cause a huge impact to the business. Integrating the system with System Performance Monitoring tools is worth for consideration as early in the development process.
+Bats are one of the few mammals that can use sound to navigate, a trick called **echolocation**. More than half of 900 spieces rely on echolocation to detect obstacles in flight, find their way into roosts and forage for food. Bats adapt theirself into the nature of living, since bate are almost blind, so they developed echolocation technique as a tool for their survival.
 
-On the other hand, some developers may also think that it is not necessary when it comes to applications with short lifespan. It is the product owner's decision if they are willing to invest on the time spent for adding up monitoring into the system, but at least way important to raise the concern about it. There is no perfect system that will never be interrupted or break over time. The cost and risk should always be on top discussion for decision-making in every project management.
+In human IT world, it is in our interest, that the system is constantly up and running. The effect of system crash might go unnoticed, and in worst cases, the users are the first ones who will experience it and will cause a huge impact to the business. 
 
-### III. What is the soultion then?
+Bats have echolocation technique, and human have **System Performance Monitoring** tools, which will notify developers any occurence of performance issue a system might experience. 
+
+### III. What is SPM, and how do we use that to monitor our system?
 
 ##### A. Survey Questionnaire
 
@@ -141,6 +141,7 @@ The report still gives us an open question of — can it be added later in the p
 
 ### VI. References
 
+* https://www.scientificamerican.com/article/how-do-bats-echolocate-an/
 * https://www.cyberciti.biz/faq/stress-test-linux-unix-server-with-stress-ng/
 * https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04
 * http://docs.grafana.org/guides/getting_started/

@@ -20,8 +20,7 @@
 
 ***
 
-### I. The Problem <br>
-##### _As blind as a bat — occurrence of system crash and performance issue_
+### I. _If you are blind as a bat — how should you being aware of any occurrence of system crash and performance issue?_
 
 Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or encountered performance issue without the developers/operators awareness.
 
@@ -29,14 +28,14 @@ If the application is not working as intended to be, it can be varied from vario
 
 Whenever the functioning system has been interrupted with such issues and become unavailable, the business will also suffer. The business' credibility might be at risk — losing their current and potential clients. The longer the issues are hiding behind the curtains — unknown, the higher the risk it could reflect into the business. 
 
-### II. Problem Statement
-###### _Bats crash more often — likewise your system_
+### II.  _Bats crash more often — likewise your system_
+######
 
 The effect of system crash might go unnoticed, and the cost will follow with the size of the system. The workload for tracing the reason to system crash will be a heavy work. In worst cases, the users are the first ones who will experience it and will cause a huge impact to the business. Integrating the system with System Performance Monitoring tools is worth for consideration as early in the development process.
 
 On the other hand, some developers may also think that it is not necessary when it comes to applications with short lifespan. It is the product owner's decision if they are willing to invest on the time spent for adding up monitoring into the system, but at least way important to raise the concern about it. There is no perfect system that will never be interrupted or break over time. The cost and risk should always be on top discussion for decision-making in every project management.
 
-### III. Proof of Concept
+### III. What is the soultion then?
 
 ##### A. Survey Questionnaire
 
@@ -103,6 +102,24 @@ In connection with Prometheus, we created a dashboard for the project. It simply
 
 ![image](https://user-images.githubusercontent.com/16150075/49698689-6b2d6180-fbc7-11e8-8d5c-3748e10270f5.png)
 
+
+
+
+##### C. Experimentation
+
+We also conducted an experiment that will define how SPM works — [Monitoring a System Crash Experiment with Digital Ocean, Grafana, Promethueus and Stress Test](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Experiment.md).
+
+### IV. Conclusion
+
+There are no exceptions on unexpected system failure. We could always plan for flawless perfect system, but the assurance that nothing will go wrong over time is very naive. And the consequences of having the customers/users deal with a failing system from time to time is a big no, no for the business, the income will not flow if the system is down or slow! There are SPM tools which can provide the awareness for the developers/operators about the system's performance. It can be costly effective to spice up the system with SPM tools rather than even more expensive resolving performance issues and lost customers due to product's dissatisfaction.
+
+The experiment describes how you can use Grafana, Prometheus, Node_exporter to monitoring and visualize the performance of your system, by chance detecting any performance issue/overload if any and be alerted with a predescribed alert rule. The advantage of monitoring your system is to get awareness of the issue(s) in real-time, and probably fix the issue before it reachs the customers, so it wont have impact on your business. 
+ 
+
+### V. Outlook Discussion
+
+ A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown. Given that SPM is important and all the IT professionals in the field thinks that it should be done as early as possible in the development cycle. We implemented Grafana and Prompetheus for our LSD project, and it was a occurence of system breakdown, and we used the monitoring to trace the error. Here's a short brief and reflection on what we learned from the event.
+
 ##### _System Performance Issue Tracking Experience — our system hits the ground badly_
 
 November 14, 2018 — we encountered a system breakdown. We were notified that our Hackernews system was either so slow in loading the summary page or just crashed totally after request. We started investigating the problem and came up with bunch of possible cause of the problem.
@@ -120,23 +137,7 @@ After adding the setup for logging with Kibana and logstash, the system kept on 
 
 <sub>The image shows the crazy behavior of our Hackernews system. The Grafana dashboard shows when the system was struggling and have been down several times, the posts requests from the simulator started failing and became flat while lost posts grows enormously, and the so slow loading time to the landing page.</sub>
 
-
-##### C. Experimentation
-
-We also conducted an experiment that will define how SPM works — [Monitoring a System Crash Experiment with Digital Ocean, Grafana, Promethueus and Stress Test](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Experiment.md).
-
-### IV. Conclusion
-
-There are no exceptions on unexpected system failure. We could always plan for flawless perfect system, but the assurance that nothing will go wrong over time is very naive. And the consequences of having the customers/users deal with a failing system from time to time is a big no, no for the business, the income will not flow if the system is down or slow! There are SPM tools which can provide the awareness for the developers/operators about the system's performance. It can be costly effective to spice up the system with SPM tools rather than even more expensive resolving performance issues and lost customers due to product's dissatisfaction.
-
-The experiment describes how you can use Grafana, Prometheus, Node_exporter to monitoring and visualize the performance of your system, by chance detecting any performance issue/overload if any and be alerted with a predescribed alert rule. The advantage of monitoring your system is to get awareness of the issue(s) in real-time, and probably fix the issue before it reachs the customers, so it wont have impact on your business. 
- 
-
-### V. Outlook Discussion
-
- A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown. Given that SPM is important and all the IT professionals in the field thinks that it should be done as early as possible in the development cycle, it still gives us an open question of — can it be added later in the process, at least right before production?
-
- One responder — former student at the same course — thinks that it should be done later in the process, and the same as when we did it during this semester period.
+The report still gives us an open question of — can it be added later in the process, at least right before production? One responder from the survery — former student at the same course — thinks that it should be done later in the process, and the same as when we did it during this semester period.One responder — former student at the same course — thinks that it should be done later in the process, and the same as when we did it during this semester period.
 
 ### VI. References
 

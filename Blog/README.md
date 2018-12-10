@@ -20,7 +20,7 @@
 
 ***
 
-### I. _If you are blind as a bat — how should you being aware of any occurrence of system crash and performance issue?_
+### I. _If you are blind as a bat — how are you supposed to get awareness of any occurrence of system crash and performance issue?_
 
 Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or encountered performance issue without the developers/operators awareness.
 

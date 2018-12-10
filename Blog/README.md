@@ -12,7 +12,7 @@
 
 - Application might experience occurrence of system crash due to performance issue.
 
-- The effect of system crash might go unnoticed, and the cost will follow with the size of the system. Tracing the reason to system crash will be a heavy work.
+- The effect of system crash might go unnoticed, and the cost will increase with the size of the system. Tracing the reason to system crash might be a heavy work.
 
 - The Service-Level Agreement(SLA) is achieved when monitoring the system by using Prometheus' custom metrics and Grafana's data visualization.
 

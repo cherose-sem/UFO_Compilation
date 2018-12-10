@@ -99,7 +99,7 @@ The main SPM tools that we covered for this blog are Prometheus for custom metri
 See the response summary [here](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Responses%20Summary.pdf).
 
 
-##### How would we implement and use SPM tools? Experimentation
+##### How does SPM works? Experimentation
 
 We also conducted an experiment that will define how SPM works — [Monitoring a System Crash Experiment with Digital Ocean, Grafana, Promethueus and Stress Test](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Experiment.md).
 

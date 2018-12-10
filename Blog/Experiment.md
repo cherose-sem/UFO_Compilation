@@ -46,8 +46,8 @@ Let’s first get started by creating an DO(Digital Ocean) account. Of course yo
 ![](https://i.gyazo.com/c84ee66589842dc18438d367d0e34c2f.png)
 
 ### 1.3 Access the droplet
-You now have finalized the creation of your droplet, and you shall
-- Get access to the console of droplet
+You now have finalized the creation of your droplet.
+- Now you need to get access to the console of droplet
   - Click on your server, you should get overview of the droplet, something like this.
 ![](https://i.gyazo.com/3a269db81d8f4b714ee377f912534d80.png)
   - Now you need to **access** to the server to **install** `prometheus` and `node_exporter`.

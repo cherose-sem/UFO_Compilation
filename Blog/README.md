@@ -2,17 +2,11 @@
 
 ### _Abstract:_
 
-##### _Kent Beck recipe:_
-> _state the problem_ <br>
-> _say why it is interesting_ <br>
-> _say what your solution achieves_ <br>
-> _say what follows from your solution_ <br>
-
 **System Performance Monitoring**
 
 - Application might experience occurrence of system crash due to performance issue.
 
-- The effect of system crash might go unnoticed, and the cost will increase with the size of the system. Tracing the reason to system crash might be a heavy work.
+- The effect of system crash might go unnoticed, tracing the issue to system crash will be a hard and longlasting work.
 
 - The Service-Level Agreement(SLA) is achieved when monitoring the system by using Prometheus' custom metrics and Grafana's data visualization.
 

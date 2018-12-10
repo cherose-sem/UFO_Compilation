@@ -22,7 +22,7 @@ Whenever the functioning system has been interrupted with such issues and become
 ### II.  _Bats uses echolocation technique to avoid crashing into objects — like you should with your system_
 ######
 
-Bats are one of the few mammals that can use sound to navigate, a trick called **echolocation**. More than half of 900 spieces rely on echolocation to detect obstacles in flight, find their way into roosts and forage for food. Bats adapt theirself into the nature of living, since bate are almost blind, so they developed echolocation technique as a tool for their survival.
+Bats are one of the few mammals that can use sound to navigate, a trick called **echolocation**. More than half of 900 spieces rely on echolocation to detect obstacles in flight, find their way into roosts and forage for food. Bats adapt theirself into the nature of living, since bats are almost blind, so they developed echolocation technique as a tool for their survival.
 
 In human IT world, it is in our interest, that the system is constantly up and running. The effect of system crash might go unnoticed, and in worst cases, the users are the first ones who will experience it and will cause a huge impact to the business. 
 

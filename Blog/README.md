@@ -140,6 +140,12 @@ The experiment describes how you can use Grafana, Prometheus, Node_exporter to m
 
  One responder — former student at the same course — thinks that it should be done later in the process, and the same as when we did it during this semester period.
 
+### VI. References
+
+* https://www.cyberciti.biz/faq/stress-test-linux-unix-server-with-stress-ng/
+* https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04
+* http://docs.grafana.org/guides/getting_started/
+* https://blog.pandorafms.org/why-you-need-a-monitoring-system/
 
 ***
 > **Authors:**

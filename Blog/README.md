@@ -30,7 +30,7 @@ Bats have echolocation technique, and human have **System Performance Monitoring
 
 ### III. _What is SPM? How and why should we implement SPM?_
 
-##### What is spm?. System Performance Monitoring Experience with Prometheus and Grafana
+##### What is spm? - System Performance Monitoring with Prometheus and Grafana
 
 System Performance Monitoring(SPM) can be done by using tools such as Prometheus and Grafana. The Service-Level Agreement(SLA) was made between our group—developers, and the operators. The Hackernews project for Large Systems Development(LSD) should comply to the agreement. It includes the uptime of 95%, data loss of 20%, and landing page load time of maximum 3 seconds. Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization in purpose of analytics and monitoring. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. Therefore, the combination of Prometheus and Grafana made it possible for us to monitor the system based on our needs.
 
@@ -73,9 +73,7 @@ In connection with Prometheus, we created a dashboard for the project. It simply
 ![image](https://user-images.githubusercontent.com/16150075/49698689-6b2d6180-fbc7-11e8-8d5c-3748e10270f5.png)
 
 
-
-
-##### Why spm?. Survey Questionnaire
+##### Why spm? - Survey Questionnaire
 
 We conducted a survey in relation to the subject. We chose to formulate qualitative questions to broaden our knowledge about System Performance Monitoring(SPM) based on the responders experience. See the questionnaire [here](https://goo.gl/forms/Iq13rorAlEzi05Lr2).
 
@@ -99,7 +97,7 @@ The main SPM tools that we covered for this blog are Prometheus for custom metri
 See the response summary [here](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Responses%20Summary.pdf).
 
 
-##### How does SPM works? Experimentation
+##### How does SPM works? - Experimentation
 
 We also conducted an experiment that will define how SPM works — [Monitoring a System Crash Experiment with Digital Ocean, Grafana, Promethueus and Stress Test](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Experiment.md).
 

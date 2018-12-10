@@ -28,7 +28,7 @@ In human IT world, it is in our interest, that the system is constantly up and r
 
 Bats have echolocation technique, and human have **System Performance Monitoring** tools, which will notify developers any occurence of performance issue a system might experience. 
 
-### III. _What is SPM? How and why should we do an implementation of SPM?_
+### III. _What is SPM? How and why should we implement SPM?_
 
 ##### A. Survey Questionnaire
 

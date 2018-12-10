@@ -1,7 +1,7 @@
 # Monitoring a System Crash Experiment with Digital Ocean, Grafana, Prompethueus and stress test
 ___
 
-Here i will make an experiment that will give you some of examples of how a **System Performance Monitoring(SPM)** can help you preventing system breakdowns, or at least give you some curicial informations on which part of the system have got a performance issues. There are some setup setups you have to conduct in order to get stuff's up and running.
+Here i will make an experiment that will give you some of examples of how a **System Performance Monitoring(SPM)** can help you preventing system breakdowns, or at least give you some curicial informations on which part of the system have got a performance issues. You need to setup the experiment in order to get stuff's up and running, and do the actual experiment.
 
 ![](https://camo.githubusercontent.com/d010ea19c70677a0bfd8a64fc01d2b0948e1ffc1/687474703a2f2f646f63732e67726166616e612e6f72672f6173736574732f696d672f66656174757265732f64617368626f6172645f6578312e706e67)
 
@@ -93,18 +93,53 @@ Now you should have installed `prompetheus` and `node_exporter` on your digital 
   - You should see a overview with lot of panels and meterics something like that
 ![](https://i.gyazo.com/fe94217957dbe60956fcfa4f716f3857.png)
 
-### 2.3 Grafana explaination
+### 2.4 Setup the alert notication system
+Now we would like to setup the alert system, so you will notify if the performance excees a predescribed limit. Like if the usage percent of CPU workload exceeds 80% over a period of time (5 minutes).
 
+- First hand we will setup the alert notication.
+  - Click **Alert -> Notication channel**
+    - Click  **"+ New channel"**
+    - Setup the notication with your own email
+    - Try Send Test to check if the notification actually workd
+    - Save
+![](https://i.gyazo.com/98d3d98c54e6905a7b427f68136d5e68.png)
 
-### 2.4 Setup the trigger alert system
+### 2.5 Setup the trigger(Alert rules)
+Now we will actually create some rules, that will send you a email if the rules breaks.
+- Goto your dashboard
+- Click the panel **"CPU Basic"**
+  - Edit panel
+  - Click Alert
+  - Create alert
+  - Set the "Is above" to 80%
+  - Set "if no data" to "alerting"
+  - Set "query(A,1m,now)"
+  - Click Test Rule
+![](https://i.gyazo.com/852626219479954304d08b1ccf9ce9bc.png)
+
+Now the alert rule is set, you should now se a red line in the panel, that show the performance limit, before the alert will be trigged.
+
+![](https://i.gyazo.com/350445423b77e5dbf7d4c581a0b6de78.png)
 
 # The actual experiment 
+Now we will perform the actually experiment, it have took a while to setup everything up but at least now you should know how to setup the 
+`Digital Ocean droplet`, `Prompetheus`, `node_exporter` and `Grafana dashboard` for your future usage. 
+
+Anyway, now we will perform a CPU stress test, that will exceedes your predescribed alert rule, so it should be trigged and send your a notication in email. And then we will aswell try to shut down the digital ocean droplet, and in that case you should aswell recieve a notication.
+
 ## 3. Install linux stress
 - Go your digital ocean terminal
-- Run `$ sudo apt install stress`
+  - Run `$ sudo apt install stress`
+  - Once the stress is installed, you run the stress with this command 
+    - `stress -c 2 -i 1 -m 1 --vm-bytes 128M -t 240s`
+  - Now you should be able to see that the cpu precent is high as 100% on grafana dashboard
+  - Wait 2 min and you should get a email notication.
+
+## 3.1 Shut down the droplet
+- Goto your digital ocean droplet and turn this off
+- Wait 2 min, you should aswell get a notication.
 
 ### 4. Conclusion
 
-## 5. References & Learn more
 
 

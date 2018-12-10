@@ -21,7 +21,6 @@
 ***
 
 ### I. _If you are blind as a bat — how are you supposed to be aware of any occurrence of system crash and performance issue?_
-aware of any occurrence of
 Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or any performance issue without the developers/operators awareness. When the application is not working intended, the reasons can be varied like from server overload, enormous number of requests, insufficient RAM, or out-dated libraries/packages. Regardless to whatever reason it could be, small issues may lead to bigger problems.
 
 Whenever the functioning system has been interrupted with such issues and become unavailable, the business will suffer. The business' credibility might be at risk — losing their current and potential clients. The longer the issues are hiding behind the curtains, the higher the cost will reflect into the business. 
@@ -111,14 +110,16 @@ We also conducted an experiment that will define how SPM works — [Monitoring a
 
 ### IV. Conclusion
 
+
 There are no exceptions on unexpected system failure. We could always plan for flawless perfect system, but the assurance that nothing will go wrong over time is very naive. And the consequences of having the customers/users deal with a failing system from time to time is a big no, no for the business, the income will not flow if the system is down or slow! There are SPM tools which can provide the awareness for the developers/operators about the system's performance. It can be costly effective to spice up the system with SPM tools rather than even more expensive resolving performance issues and lost customers due to product's dissatisfaction.
 
-The experiment describes how you can use Grafana, Prometheus, Node_exporter to monitoring and visualize the performance of your system, by chance detecting any performance issue/overload if any and be alerted with a predescribed alert rule. The advantage of monitoring your system is to get awareness of the issue(s) in real-time, and probably fix the issue before it reachs the customers, so it wont have impact on your business. 
- 
+But **when** should we implement SPM in a software development cycle? Some developers may think that it is not necessary when it comes to applications with short lifespan. It is the product owner's decision if they are willing to invest the time spent for adding up monitoring into the system, but at least way its important to raise the concern about it. There is no perfect system that will never be interrupted or break over time. The cost and risk should always be on top discussion for decision-making in every project management. From our survery its clear that a system monitoring will give operators an excellence opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown. We can conclude from the survery that most of the IT professionals in the field thinks that it should be done as early as possible in the development cycle. 
 
+Besides the survery, the experiment describes how you can use Grafana, Prometheus, Node_exporter to monitoring and visualize the performance of your system, by chance detecting any performance issue/overload if any and be alerted with a predescribed alert rule. The advantage of monitoring your system is to get awareness of the issue(s) in real-time, and probably fix the issue before it reachs the customers, so it wont have impact on your business. 
+ 
 ### V. Outlook Discussion
 
- A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown. Given that SPM is important and all the IT professionals in the field thinks that it should be done as early as possible in the development cycle. We implemented Grafana and Prompetheus for our LSD project, and it was a occurence of system breakdown, and we used the monitoring to trace the error. Here's a short brief and reflection on what we learned from the event.
+We implemented Grafana and Prompetheus for our LSD project, and it was a occurence of system breakdown, and we used the monitoring to trace the error. Here's a short brief and reflection on what we learned from the event.
 
 ##### _System Performance Issue Tracking Experience — our system hits the ground badly_
 

@@ -102,6 +102,7 @@ Now we would like to setup the alert system, so you will notify if the performan
     - Setup the notication with your own email
     - Try Send Test to check if the notification actually workd
     - Save
+    
 ![](https://i.gyazo.com/98d3d98c54e6905a7b427f68136d5e68.png)
 
 ### 2.5 Setup the trigger(Alert rules)
@@ -115,6 +116,7 @@ Now we will actually create some rules, that will send you a email if the rules 
   - Set "if no data" to "alerting"
   - Set "query(A,1m,now)"
   - Click Test Rule
+  
 ![](https://i.gyazo.com/852626219479954304d08b1ccf9ce9bc.png)
 
 Now the alert rule is set, you should now se a red line in the panel, that show the performance limit, before the alert will be trigged.
@@ -141,6 +143,8 @@ Anyway, now we will perform a CPU stress test, that will exceedes your predescri
 
 ### 4. Conclusion
 
-The experiment 
+The experiment shows you how to use Grafana, Prompetheus and node_exporter to monitoring and visualize the performance of your system. You should now understand the advantage of using a monitoring tool, and being alerted in time. 
+
+
 
 

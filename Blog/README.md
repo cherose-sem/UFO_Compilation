@@ -25,11 +25,9 @@
 
 Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or encountered performance issue without the developers/operators awareness.
 
-If a website is not working well or it does so very slowly and there are some problems For example, server overload which means user post a lot of request, or there is not an insufficient RAM, servers are machines and sometimes fans bust or maybe coding error reason for syntax error. There are some reason at program errors, Whatever reason developer must know what these errors are and how to handle them, small issues might evolve into anything major.
+If the application is not working as intended to be, it can be varied from various reasons. For example, server overload — users enormous number of requests, insufficient RAM, or out-dated libraries/packages. Regardless to whatever reason it could be, small issues may lead to bigger problems.
 
-Whenever there is a problem with the server or website, it will take time for developers to notice the problem of the website or server. It will probably take hours before we realize the problem (probably due to a user’s complaint).
-
-The server might have many users who suffer greatly from the unavailability of the website and maybe the termination of the server or website is damaging to their credibility, which would be bad publicity that can further damage our business. The website could risk losing its placement in Google search results, and it might impact their business by losing their currently and potentially customers. That's why we have to minimize the time our page is down or running slowly.
+Whenever the functioning system has been interrupted with such issues and become unavailable, the business will also suffer. The business' credibility might be at risk — losing their current and potential clients. The longer the issues are hiding behind the curtains — unknown, the higher the risk it could reflect into the business. 
 
 ### II. Problem Statement
 ###### _Bats crash more often — likewise your system_

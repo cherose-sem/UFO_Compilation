@@ -32,7 +32,8 @@ Bats have echolocation technique, and human have **System Performance Monitoring
 
 ##### What is spm? - System Performance Monitoring with Prometheus and Grafana
 
-System Performance Monitoring(SPM) will be setupped by using tools such as Prometheus and Grafana. The Service-Level Agreement(SLA) was made between our group—developers, and the operators. The Hackernews project for Large Systems Development(LSD) should comply to the agreement. It includes the uptime of 95%, data loss of 20%, and landing page load time of maximum 3 seconds. Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization in purpose of analytics and monitoring. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. Therefore, the combination of Prometheus and Grafana made it possible for us to monitor the system based on our needs.
+A System Performance Monitoring(SPM) will be built with tools such as Grafana, Promptheus and node_exporter. 
+The Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization with the purpose of analytics and monitoring the system. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. The combination of Prometheus and Grafana made it possible for us to monitor the system based on our needs.
 
 **_Prometheus Custom Metrics_**
 
@@ -112,7 +113,12 @@ Besides the survery, the experiment describes how you can use Grafana, Prometheu
  
 ### V. Outlook Discussion
 
-We implemented Grafana and Prompetheus for our LSD project, and it was a occurence of system breakdown, and we used the monitoring to trace the error. Here's a short brief and reflection on what we learned from the event.
+We implemented Grafana and Prompetheus for our LSD project, to fullfill the Service-Level Agreement(SLA) that was made between the developers and the operators for the Hackernews project in LSD. The agreement contains following:
+* Uptime of 95%
+* Data loss of 20%
+* Load time of landing page should be within 3 seconds. 
+
+We experienced an occurence of system breakdown after deploying our project, and we used the monitoring to trace the error. Here's a short brief and reflection on what we learned from the event.
 
 ##### _System Performance Issue Tracking Experience — our system hits the ground badly_
 

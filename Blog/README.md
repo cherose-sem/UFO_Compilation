@@ -15,7 +15,7 @@
 ***
 
 ### I. _If you are blind as a bat — how are you supposed to be aware of any occurrence of system crash and performance issue?_
-Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system crash or any performance issue without the developers/operators awareness. When the application is not working intended, the problem could cause because of like server overload, enormous number of requests, insufficient RAM/harddisk space and so on. Regardless to whatever reason it could be, small issues may lead to bigger problems.
+Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system experiences any performance issue/breakdowns without the developers/operators awareness. When the application is not working intended, the problem could cause because of like server overload, enormous number of requests, insufficient RAM/harddisk space and so on. Regardless to whatever reason it could be, small issues may lead to bigger problems.
 
 Whenever the functioning system has been interrupted with such issues and become unavailable, the business will suffer. The business' credibility might be at risk — losing their current and potential clients. The longer the issues are hiding behind the curtains, the higher the cost will reflect into the business. 
 

@@ -33,7 +33,7 @@ Bats have echolocation technique, and human have **System Performance Monitoring
 ##### What is spm? - System Performance Monitoring with Prometheus and Grafana
 
 A System Performance Monitoring(SPM) will be built with tools such as Grafana, Promptheus and node_exporter. 
-The Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization with the purpose of analytics and monitoring the system. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. The combination of Prometheus and Grafana made it possible for us to monitor the system based on our needs.
+The Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization with the purpose of analytics and monitoring the system. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. The combination of Prometheus and Grafana made it possible for developers to monitor the system based on their needs.
 
 **_Prometheus Custom Metrics_**
 

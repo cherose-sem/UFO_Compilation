@@ -6,7 +6,7 @@
 
 - Application might experience occurrence of system crash due to performance issue.
 
-- The effect of system crash might go unnoticed, tracing the issue to system crash will be a hard and longlasting work.
+- The effect of system crash might go unnoticed, tracing the issue to system crash will be a hard and long lasting work.
 
 - The Service-Level Agreement(SLA) is achieved when monitoring the system by using Prometheus' custom metrics and Grafana's data visualization.
 
@@ -17,22 +17,21 @@
 ### I. _If you are blind as a bat — how are you supposed to be aware of any occurrence of system crash and performance issue?_
 Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system experiences any performance issue/breakdowns without the developers/operators awareness. When the application is not working intended, the problem could cause because of like server overload, enormous number of requests, insufficient RAM/harddisk space and so on. Regardless to whatever reason it could be, small issues may lead to bigger problems.
 
-Whenever the functioning system has been interrupted with such issues and become unavailable, the business will suffer. The business' credibility might be at risk — losing their current and potential clients. The longer the issues are hiding behind the curtains, the higher the cost will reflect into the business. 
+Whenever the functioning system has been interrupted with such issues and become unavailable, the business will suffer. The business' credibility might be at risk — losing their current and potential clients. The longer the issues are hiding behind the curtains, the higher the cost will reflect into the business.
 
 ### II.  _Bats uses echolocation technique to avoid crashing into objects — like you should with your system_
-######
 
-Bats are one of the few mammals that can use sound to navigate, a trick called **echolocation**. More than half of 900 spieces rely on echolocation to detect obstacles in flight, find their way into roosts and forage for food. Bats adapt theirself into the nature of living, since bats are almost blind, so they developed echolocation technique as a tool for their survival.
+Bats are one of the few mammals that can use sound to navigate, a trick called **echolocation**. More than half of 900 spieces rely on echolocation to detect obstacles in flight, find their way into roosts and forage for food. Bats adapt themselves into the nature of living, since bats are almost blind, so they developed echolocation technique as a tool for their survival.
 
-In human IT world, it is in our interest, that the system is constantly up and running. The effect of system crash might go unnoticed, and in worst cases, the users are the first ones who will experience it and will cause a huge impact to the business. 
+In human IT world, it is in our interest, that the system is constantly up and running. The effect of system crash might go unnoticed, and in worst cases, the users are the first ones who will experience it and will cause a huge impact to the business.
 
-Bats have echolocation technique, and human have **System Performance Monitoring** tools, which will notify developers any occurence of performance issue a system might experience. 
+Bats have echolocation technique, and human have **System Performance Monitoring** tools, which will notify developers any occurence of performance issue a system might experience.
 
 ### III. _What is SPM? How and why should we implement SPM?_
 
 ##### What is spm? - System Performance Monitoring with Prometheus and Grafana
 
-A System Performance Monitoring(SPM) will be built with tools such as Grafana, Promptheus and node_exporter. 
+A System Performance Monitoring(SPM) will be built with tools such as Grafana, Prometheus and node_exporter.
 The Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization with the purpose of analytics and monitoring the system. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. The combination of Prometheus and Grafana made it possible for developers to monitor the system based on their needs.
 
 **_Prometheus Custom Metrics_**
@@ -67,14 +66,14 @@ router.get(['/newest', '/newest/:max'], async function(req, res) {
 
 **_Grafana Hackernews Dashboard_**
 
-In connection with Prometheus, we created a dashboard for the project. It simply shows the Hackernews System's behaviour over time as it refreshes every 10s.
+In connection with Prometheus, we created a dashboard for the project. It simply shows the Hackernews System's behavior over time as it refreshes every 10s.
 
 ![image](https://user-images.githubusercontent.com/16150075/49698683-5e107280-fbc7-11e8-8a90-df7a846e4c7e.png)
 
 ![image](https://user-images.githubusercontent.com/16150075/49698689-6b2d6180-fbc7-11e8-8d5c-3748e10270f5.png)
 
 
-##### Why spm? - Survey Questionnaire
+##### Why SPM? - Survey Questionnaire
 
 We conducted a survey in relation to the subject. We chose to formulate qualitative questions to broaden our knowledge about System Performance Monitoring(SPM) based on the responders experience. See the questionnaire [here](https://goo.gl/forms/Iq13rorAlEzi05Lr2).
 
@@ -107,16 +106,16 @@ We also conducted an experiment that will define how SPM works — [Monitoring a
 
 There are no exceptions on unexpected system failure. We could always plan for flawless perfect system, but the assurance that nothing will go wrong over time is very naive. And the consequences of having the customers/users deal with a failing system from time to time is a big no, no for the business, the income will not flow if the system is down or slow! There are SPM tools which can provide the awareness for the developers/operators about the system's performance. It can be costly effective to spice up the system with SPM tools rather than even more expensive resolving performance issues and lost customers due to product's dissatisfaction.
 
-But **when** should we implement SPM in a software development cycle? Some developers may think that it is not necessary when it comes to applications with short lifespan. It is the product owner's decision if they are willing to invest the time spent for adding up monitoring into the system, but at least way its important to raise the concern about it. There is no perfect system that will never be interrupted or break over time. The cost and risk should always be on top discussion for decision-making in every project management. From our survery its clear that a system monitoring will give operators an excellence opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown. We can conclude from the survery that most of the IT professionals in the field thinks that it should be done as early as possible in the development cycle. 
+But **when** should we implement SPM in a software development cycle? Some developers may think that it is not necessary when it comes to applications with short lifespan. It is the product owner's decision if they are willing to invest the time spent for adding up monitoring into the system, but at least way its important to raise the concern about it. There is no perfect system that will never be interrupted or break over time. The cost and risk should always be on top discussion for decision-making in every project management. From our survery its clear that a system monitoring will give operators an excellence opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown. We can conclude from the survery that most of the IT professionals in the field thinks that it should be done as early as possible in the development cycle.
 
-Besides the survery, the experiment describes how you can use Grafana, Prometheus, Node_exporter to monitoring and visualize the performance of your system, by chance detecting any performance issue/overload if any and be alerted with a predescribed alert rule. The advantage of monitoring your system is to get awareness of the issue(s) in real-time, and probably fix the issue before it reachs the customers, so it wont have impact on your business. 
- 
+Besides the survery, the experiment describes how you can use Grafana, Prometheus, Node_exporter to monitoring and visualize the performance of your system, by chance detecting any performance issue/overload if any and be alerted with a predescribed alert rule. The advantage of monitoring your system is to get awareness of the issue(s) in real-time, and probably fix the issue before it reachs the customers, so it wont have impact on your business.
+
 ### V. Outlook Discussion
 
-We implemented Grafana and Prompetheus for our LSD project, to fullfill the Service-Level Agreement(SLA) that was made between the developers and the operators for the Hackernews project in LSD. The agreement contains following:
+We implemented Grafana and Prometheus for our LSD project, to fullfill the Service-Level Agreement(SLA) that was made between the developers and the operators for the Hackernews project in LSD. The agreement contains following:
 * Uptime of 95%
 * Data loss of 20%
-* Load time of landing page should be within 3 seconds. 
+* Load time of landing page should be within 3 seconds.
 
 We experienced an occurence of system breakdown after deploying our project, and we used the monitoring to trace the error. Here's a short brief and reflection on what we learned from the event.
 
@@ -137,7 +136,7 @@ After adding the setup for logging with Kibana and logstash, the system kept on 
 
 <sub>The image shows the crazy behavior of our Hackernews system. The Grafana dashboard shows when the system was struggling and have been down several times, the posts requests from the simulator started failing and became flat while lost posts grows enormously, and the so slow loading time to the landing page.</sub>
 
-The report still gives us an open question of — can it be added later in the process, at least right before production? One responder from the survery — former student at the same course — thinks that it should be done later in the process, and the same as when we did it during this semester period.One responder — former student at the same course — thinks that it should be done later in the process, and the same as when we did it during this semester period.
+The report still gives us an open question of — can it be added later in the process, at least right before production? One responder from the survey — former student at the same course — thinks that it should be done later in the process, and the same as when we did it during this semester period.
 
 ### VI. References
 

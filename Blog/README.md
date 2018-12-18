@@ -1,5 +1,12 @@
 ## INVESTIGATION AND REPORTING (UFO) Blog Entry
 
+
+***
+> **Authors:**
+> - Andreas Sørbye Styltsvig
+> - Cherry Rose Jimenez Semeña
+> - Mahnaz Karimi
+
 ### _Abstract:_
 
 **System Performance Monitoring**
@@ -146,8 +153,3 @@ The report still gives us an open question of — can it be added later in the p
 * http://docs.grafana.org/guides/getting_started/
 * https://blog.pandorafms.org/why-you-need-a-monitoring-system/
 
-***
-> **Authors:**
-> - Andreas Sørbye Styltsvig
-> - Cherry Rose Jimenez Semeña
-> - Mahnaz Karimi

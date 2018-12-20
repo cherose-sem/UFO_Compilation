@@ -1,42 +1,32 @@
-## INVESTIGATION AND REPORTING (UFO) Blog Entry
 
+##  _What could possibly go wrong?_ — System Performance Monitoring
 
-***
 > **Authors:**
 > - Andreas Sørbye Styltsvig
 > - Cherry Rose Jimenez Semeña
 > - Mahnaz Karimi
 
-### _Abstract:_
-
-**System Performance Monitoring**
-
-- Application might experience occurrence of system crash due to performance issue.
-
-- The effect of system crash might go unnoticed, tracing the issue to system crash will be a hard and long lasting work.
-
-- The Service-Level Agreement(SLA) is achieved when monitoring the system by using Prometheus' custom metrics and Grafana's data visualization.
-
-- A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown.
-
 ***
 
+_**Application might experience occurrence of system crash due to performance issue. The effect of system crash might go unnoticed, tracing the issue to system crash will be a hard and long lasting work. The Service-Level Agreement(SLA) is achieved when monitoring the system by using Prometheus' custom metrics and Grafana's data visualization. A system monitoring will give operators an opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown.**_
+
+
 ### I. _If you are blind as a bat — how are you supposed to be aware of any occurrence of system crash and performance issue?_
-Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system experiences any performance issue/breakdowns without the developers/operators awareness. When the application is not working intended, the problem could cause because of like server overload, enormous number of requests, insufficient RAM/harddisk space and so on. Regardless to whatever reason it could be, small issues may lead to bigger problems.
+Bats aren't blind but their vision is so bad. This reflects to the problem that occurs when the system experiences any performance issue/breakdowns without the developers/operators awareness. When the application is not working as intended, the problem may occur because of issues such as server overload, enormous number of requests, insufficient RAM/harddisk space and so on. Regardless to whatever reason it could be, small issues may lead to bigger problems.
 
 Whenever the functioning system has been interrupted with such issues and become unavailable, the business will suffer. The business' credibility might be at risk — losing their current and potential clients. The longer the issues are hiding behind the curtains, the higher the cost will reflect into the business.
 
 ### II.  _Bats uses echolocation technique to avoid crashing into objects — like you should with your system_
 
-Bats are one of the few mammals that can use sound to navigate, a trick called **echolocation**. More than half of 900 spieces rely on echolocation to detect obstacles in flight, find their way into roosts and forage for food. Bats adapt themselves into the nature of living, since bats are almost blind, so they developed echolocation technique as a tool for their survival.
+Bats are one of the few mammals that can use sound to navigate, a trick called **echolocation**. More than half of 900 species rely on echolocation to detect obstacles in flight, find their way into roosts and forage for food. Bats adapt themselves into the nature of living, since bats are almost blind, so they developed echolocation technique as a tool for their survival.
 
 In human IT world, it is in our interest, that the system is constantly up and running. The effect of system crash might go unnoticed, and in worst cases, the users are the first ones who will experience it and will cause a huge impact to the business.
 
-Bats have echolocation technique, and human have **System Performance Monitoring** tools, which will notify developers any occurence of performance issue a system might experience.
+Bats have echolocation technique, and human have **System Performance Monitoring** tools, which will notify developers any occurrence of performance issue a system might experience.
 
 ### III. _What is SPM? How and why should we implement SPM?_
 
-##### What is spm? - System Performance Monitoring with Prometheus and Grafana
+##### What is SPM? - System Performance Monitoring with Prometheus and Grafana
 
 A System Performance Monitoring(SPM) will be built with tools such as Grafana, Prometheus and node_exporter.
 The Prometheus has client libraries with custom metrics that can be implemented within the application. Grafana is used for data visualization with the purpose of analytics and monitoring the system. It can process query results from Prometheus metrics, and transform to figures or graphs in a dashboard. The combination of Prometheus and Grafana made it possible for developers to monitor the system based on their needs.
@@ -99,7 +89,7 @@ The two responders from CSIS Security Group shared their experience when they ac
 <sup>_QUESTION: Do you have any experience of preventing or trace performance issue using a SPM tool? If yes, please explain the experience and why/how the SPM tool have prevented or being a help to resolve the issue._</sup><br>
 ![issue experience](https://user-images.githubusercontent.com/16150075/49582965-f8b64a80-f956-11e8-9c26-496160029d19.png)
 
-The main SPM tools that we covered for this blog are Prometheus for custom metrics and Grafana for data visualization. There are also some tools named in the survey that is equally relevant to the subject — Kibana for logs, InfluxDB for storing and analyzing time series data, and Icinga for system and network monitoring. Prometheus hasn't been so known by most of our responders.
+The main SPM tools that we covered for this blog are Prometheus for custom metrics and Grafana for data visualization. There are also some tools named in the survey that could serve as **alternatives** which is equally relevant to the subject — Kibana for logs, InfluxDB for storing and analyzing time series data, and Icinga for system and network monitoring. Prometheus hasn't been so known by most of our responders.
 
 See the response summary [here](https://github.com/cph-cs241/UFO_Compilation/blob/master/Blog/Responses%20Summary.pdf).
 
@@ -113,18 +103,18 @@ We also conducted an experiment that will define how SPM works — [Monitoring a
 
 There are no exceptions on unexpected system failure. We could always plan for flawless perfect system, but the assurance that nothing will go wrong over time is very naive. And the consequences of having the customers/users deal with a failing system from time to time is a big no, no for the business, the income will not flow if the system is down or slow! There are SPM tools which can provide the awareness for the developers/operators about the system's performance. It can be costly effective to spice up the system with SPM tools rather than even more expensive resolving performance issues and lost customers due to product's dissatisfaction.
 
-But **when** should we implement SPM in a software development cycle? Some developers may think that it is not necessary when it comes to applications with short lifespan. It is the product owner's decision if they are willing to invest the time spent for adding up monitoring into the system, but at least way its important to raise the concern about it. There is no perfect system that will never be interrupted or break over time. The cost and risk should always be on top discussion for decision-making in every project management. From our survery its clear that a system monitoring will give operators an excellence opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown. We can conclude from the survery that most of the IT professionals in the field thinks that it should be done as early as possible in the development cycle.
+But **when** should we implement SPM in a software development cycle? Some developers may think that it is not necessary when it comes to applications with short lifespan. It is the product owner's decision if they are willing to invest the time spent for adding up monitoring into the system, but at least way its important to raise the concern about it. There is no perfect system that will never be interrupted or break over time. The cost and risk should always be on top discussion for decision-making in every project management. Based on our survey, it's clear that a system monitoring will give operators an excellent opportunity of monitoring performance of the system in real-time, and prevent additional system breakdown. We can conclude from the survey that most of the IT professionals in the field thinks that it should be done as early as possible in the development cycle.
 
-Besides the survery, the experiment describes how you can use Grafana, Prometheus, Node_exporter to monitoring and visualize the performance of your system, by chance detecting any performance issue/overload if any and be alerted with a predescribed alert rule. The advantage of monitoring your system is to get awareness of the issue(s) in real-time, and probably fix the issue before it reachs the customers, so it wont have impact on your business.
+Besides the survey, the experiment describes how you can use Grafana, Prometheus, Node_exporter to monitoring and visualize the performance of your system, by chance detecting any performance issue/overload if any and be alerted with a pre-described alert rule. The advantage of monitoring your system is to get awareness of the issue(s) in real-time, and probably fix the issue before it reaches the customers, so it won't have impact on your business.
 
 ### V. Outlook Discussion
 
-We implemented Grafana and Prometheus for our LSD project, to fullfill the Service-Level Agreement(SLA) that was made between the developers and the operators for the Hackernews project in LSD. The agreement contains following:
+We implemented Grafana and Prometheus for our LSD project, to fulfill the Service-Level Agreement(SLA) that was made between the developers and the operators for the Hackernews project in LSD. The agreement contains following:
 * Uptime of 95%
 * Data loss of 20%
 * Load time of landing page should be within 3 seconds.
 
-We experienced an occurence of system breakdown after deploying our project, and we used the monitoring to trace the error. Here's a short brief and reflection on what we learned from the event.
+We experienced an occurrence of system breakdown after deploying our project, and we used the monitoring to trace the error. Here's a short brief and reflection on what we learned from the event.
 
 ##### _System Performance Issue Tracking Experience — our system hits the ground badly_
 
@@ -152,4 +142,3 @@ The report still gives us an open question of — can it be added later in the p
 * https://www.digitalocean.com/community/tutorials/how-to-install-prometheus-on-ubuntu-16-04
 * http://docs.grafana.org/guides/getting_started/
 * https://blog.pandorafms.org/why-you-need-a-monitoring-system/
-

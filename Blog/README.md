@@ -133,7 +133,7 @@ After adding the setup for logging with Kibana and logstash, the system kept on 
 
 <sub>The image shows the crazy behavior of our Hackernews system. The Grafana dashboard shows when the system was struggling and have been down several times, the posts requests from the simulator started failing and became flat while lost posts grows enormously, and the so slow loading time to the landing page.</sub>
 
-The report still gives us an open question of — can it be added later in the process, at least right before production? One responder from the survey — former student at the same course — thinks that it should be done later in the process, and the same as when we did it during this semester period.
+The report still gives us an open question of — can it be added later in the process, at least right before production? One responder from the survey — former student at the same course — thinks that it should be done later in the process, and the same as when we did it during this semester period. On the other hand, manual system performance monitoring could also be an option, having someone to keep an eye on the system especially when it is already out in the market. But don't we have enough good reasons to automate the process and just get an alert whenever something goes wrong?
 
 ### VI. References
 
